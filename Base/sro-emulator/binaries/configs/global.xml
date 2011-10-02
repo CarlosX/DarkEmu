@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+
+<boost_serialization signature="serialization::archive" version="9">
+  <GlobalConfigs class_id="0" tracking_level="1" version="0" object_id="_0">
+
+    <OldestVersion>258</OldestVersion>
+    <CurrnetVersion>259</CurrnetVersion>
+
+    <UseHandshake>1</UseHandshake>
+    <UseBlowfish>1</UseBlowfish>
+    <UseSecurityBytes>1</UseSecurityBytes>
+
+    <IPAddress>127.0.0.1</IPAddress>
+    <Port>15780</Port>
+    
+  </GlobalConfigs>
+</boost_serialization>
+

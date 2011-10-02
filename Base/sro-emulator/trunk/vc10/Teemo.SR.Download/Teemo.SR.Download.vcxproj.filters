@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{e367c606-4ea6-44b7-95e5-cdc3e4961469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Security">
+      <UniqueIdentifier>{519c24d2-f40a-449f-9dd5-5175d81e7d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\IO">
+      <UniqueIdentifier>{8989e278-e4fa-45c9-95e2-ba551e8ef589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Configs">
+      <UniqueIdentifier>{7e07c598-5e96-42b6-84da-4a1da00372a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Packets">
+      <UniqueIdentifier>{d38c5012-7f6c-477d-bb7e-bcb65f931e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Download">
+      <UniqueIdentifier>{64c0e2fb-2789-421d-83dc-ff603361470e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Download\Configs">
+      <UniqueIdentifier>{fb7ea3e4-6c90-42c2-abc7-2f6620dd2dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Download\Files">
+      <UniqueIdentifier>{1a3c4e71-6327-460e-b3f4-ccf2ee18dce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Download\Server">
+      <UniqueIdentifier>{2f0aa23e-da1e-4842-a9cf-523fb0cb8ea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Download\Core">
+      <UniqueIdentifier>{618765aa-cd10-43c0-a4db-bc701e925e32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Download\Manager">
+      <UniqueIdentifier>{2f6dcf03-b2e1-42fc-b700-05b9c664f206}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\shared_types.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\blowfish.h">
+      <Filter>Common\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\silkroad_security.h">
+      <Filter>Common\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\stream_utility.h">
+      <Filter>Common\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\global_configs.h">
+      <Filter>Common\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\operations.h">
+      <Filter>Common\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\downloadserver\download_config.h">
+      <Filter>Download\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\downloadserver\FileMgr.h">
+      <Filter>Download\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\downloadserver\client_context.h">
+      <Filter>Download\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\downloadserver\download_server.h">
+      <Filter>Download\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\downloadserver\global_manager.h">
+      <Filter>Download\Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\blowfish.cpp">
+      <Filter>Common\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\silkroad_security.cpp">
+      <Filter>Common\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\stream_utility.cpp">
+      <Filter>Common\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\global_configs.cpp">
+      <Filter>Common\Configs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\downloadserver\Entry.cpp">
+      <Filter>Download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\downloadserver\download_config.cpp">
+      <Filter>Download\Configs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\downloadserver\FileMgr.cpp">
+      <Filter>Download\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\downloadserver\client_context.cpp">
+      <Filter>Download\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\downloadserver\download_server.cpp">
+      <Filter>Download\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\downloadserver\message_handler.cpp">
+      <Filter>Download\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\downloadserver\global_manager.cpp">
+      <Filter>Download\Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\binaries\configs\global.xml">
+      <Filter>Common\Configs</Filter>
+    </None>
+    <None Include="..\..\..\binaries\configs\download.xml">
+      <Filter>Download\Configs</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teemo.SR.Gateway", "Teemo.SR.Gateway\Teemo.SR.Gateway.vcxproj", "{1F28256D-3ABF-43B7-889B-EA253DAB82D5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teemo.SR.Download", "Teemo.SR.Download\Teemo.SR.Download.vcxproj", "{9C065812-855B-4D32-B58E-5C05A5779128}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teemo.SR.Global", "Teemo.SR.Global\Teemo.SR.Global.vcxproj", "{2661E436-596A-48C5-B433-E89E8690CEC6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teemo.SR.World", "Teemo.SR.World\Teemo.SR.World.vcxproj", "{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Debug|Win32.Build.0 = Debug|Win32
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Debug|x86.ActiveCfg = Debug|Win32
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Release|Win32.ActiveCfg = Release|Win32
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Release|Win32.Build.0 = Release|Win32
+		{1F28256D-3ABF-43B7-889B-EA253DAB82D5}.Release|x86.ActiveCfg = Release|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Debug|Win32.Build.0 = Debug|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Debug|x86.ActiveCfg = Debug|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Release|Win32.ActiveCfg = Release|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Release|Win32.Build.0 = Release|Win32
+		{9C065812-855B-4D32-B58E-5C05A5779128}.Release|x86.ActiveCfg = Release|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Debug|Win32.Build.0 = Debug|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Debug|x86.ActiveCfg = Debug|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Release|Win32.ActiveCfg = Release|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Release|Win32.Build.0 = Release|Win32
+		{2661E436-596A-48C5-B433-E89E8690CEC6}.Release|x86.ActiveCfg = Release|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Debug|Win32.Build.0 = Debug|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Debug|x86.ActiveCfg = Debug|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Release|Win32.ActiveCfg = Release|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Release|Win32.Build.0 = Release|Win32
+		{4794B884-ADEB-49CF-A3B3-CB5C47BBBFCE}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

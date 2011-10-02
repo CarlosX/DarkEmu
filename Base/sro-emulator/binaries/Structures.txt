@@ -1,0 +1,29 @@
+Of course you can host each Server-Program on a different Server/Host, but make sure you have every file in this list on the host.
+
+============ GatewayServer ===================
+
+configs/gateway.xml  
+configs/global.xml
+patches/.. <- Patch files here
+news/..    <- News here (*html files)
+1. GatewayServer.exe
+
+login_db_bak.sql : SQL File for the loginserver database.
+
+==============================================
+
+
+...
+
+
+============ DownloadServer ===================
+
+configs/download.xml
+configs/global.xml
+files/.. <- ALl files here
+2. DownloadServer.exe
+
+===============================================
+
+
+...

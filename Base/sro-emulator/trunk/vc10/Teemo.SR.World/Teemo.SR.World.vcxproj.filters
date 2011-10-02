@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Agentserver">
+      <UniqueIdentifier>{4015ea91-fbf6-4456-8218-4d5eaa639c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{4ea642ca-16d2-45e4-86f1-1031415d50b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Security">
+      <UniqueIdentifier>{d570a77f-883a-4f02-9fa3-0d769a5e0bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\IO">
+      <UniqueIdentifier>{75e2fa14-a69f-4637-bd2b-71cb943a6f7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Configs">
+      <UniqueIdentifier>{b533424e-240c-44ae-ba39-a6e94a278287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Packets">
+      <UniqueIdentifier>{4a89dee2-5d20-45ec-aaf4-a8c53ef95979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agentserver\Configs">
+      <UniqueIdentifier>{78cba310-0d0a-484e-b056-891a8bd0268f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agentserver\Manager">
+      <UniqueIdentifier>{a89fcc55-147d-4248-844c-8a748f1b7a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agentserver\Status">
+      <UniqueIdentifier>{34a9b5c6-6dec-45a3-9158-4fb160704b86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\agentserver\Entry.cpp">
+      <Filter>Agentserver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\blowfish.cpp">
+      <Filter>Common\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\silkroad_security.cpp">
+      <Filter>Common\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\stream_utility.cpp">
+      <Filter>Common\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\global_configs.cpp">
+      <Filter>Common\Configs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\agentserver\agent_configs.cpp">
+      <Filter>Agentserver\Configs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\agentserver\global_manager.cpp">
+      <Filter>Agentserver\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\agentserver\Status.cpp">
+      <Filter>Agentserver\Status</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\shared_types.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\blowfish.h">
+      <Filter>Common\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\silkroad_security.h">
+      <Filter>Common\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\stream_utility.h">
+      <Filter>Common\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\global_configs.h">
+      <Filter>Common\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\operations.h">
+      <Filter>Common\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\agentserver\agent_configs.h">
+      <Filter>Agentserver\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\agentserver\global_manager.h">
+      <Filter>Agentserver\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\agentserver\Status.h">
+      <Filter>Agentserver\Status</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\binaries\configs\global.xml">
+      <Filter>Common\Configs</Filter>
+    </None>
+    <None Include="..\..\..\binaries\configs\agent.xml">
+      <Filter>Agentserver\Configs</Filter>
+    </None>
+  </ItemGroup>
+</Project>

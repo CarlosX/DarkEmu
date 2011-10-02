@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Gateway">
+      <UniqueIdentifier>{c83b44b8-d6db-4109-a6dd-682bc26ca40b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway\Configs">
+      <UniqueIdentifier>{c68f01fb-0ba2-4d7f-b248-bc4c3991f46c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway\News">
+      <UniqueIdentifier>{132af20a-fb21-451e-961c-96ca2545a824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway\Server">
+      <UniqueIdentifier>{8188d30d-2876-4b2b-a6a6-e0513855ee23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway\Server\client">
+      <UniqueIdentifier>{52db0b06-51d3-49d7-9f3d-3b3e08e00135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway\Core">
+      <UniqueIdentifier>{f217751e-8c99-419a-9b48-0c1f5614ba25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway\Core\Informations">
+      <UniqueIdentifier>{380a3ccc-2ca7-4341-8b89-65e9c856286f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{995e4c49-2d40-4adb-bd16-5181587ae784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Security">
+      <UniqueIdentifier>{ebdd584a-e78c-4961-9a8b-6738d43ef49a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\IO">
+      <UniqueIdentifier>{4a8f8909-acc0-4305-96b1-03a30bbae3a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Configs">
+      <UniqueIdentifier>{cd7f2dad-64ff-4b44-abf1-39e51e60934b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Packets">
+      <UniqueIdentifier>{234d86a2-5cd5-459f-9053-ca0bcdee818f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway\Manager">
+      <UniqueIdentifier>{bef4f835-b264-45f6-9576-86a2df7b15b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Database">
+      <UniqueIdentifier>{fb23814c-b985-4969-9e65-fac8902f48ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Database\mysql++">
+      <UniqueIdentifier>{bc63d8a8-5a1d-4745-816b-6ed3079d3d85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\gatewayserver\gateway_config.h">
+      <Filter>Gateway\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gatewayserver\news_mgr.h">
+      <Filter>Gateway\News</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gatewayserver\gateway_server.h">
+      <Filter>Gateway\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gatewayserver\client_context.h">
+      <Filter>Gateway\Server\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\shared_types.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\blowfish.h">
+      <Filter>Common\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\silkroad_security.h">
+      <Filter>Common\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\stream_utility.h">
+      <Filter>Common\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\global_configs.h">
+      <Filter>Common\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\operations.h">
+      <Filter>Common\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gatewayserver\global_manager.h">
+      <Filter>Gateway\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gatewayserver\gamesrv_manager.h">
+      <Filter>Gateway\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gatewayserver\download_manager.h">
+      <Filter>Gateway\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\database.h">
+      <Filter>Common\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\cpool.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\datetime.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\dbdriver.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\exceptions.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\field.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\field_names.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\field_types.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\insertpolicy.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\manip.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\myset.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\mysql++.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\mystring.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\noexceptions.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\null.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\options.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\qparms.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\query.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\querydef.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\refcounted.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\result.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\row.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\scopedconnection.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\sql_buffer.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\sql_types.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\sqlstream.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\ssqls.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\ssqls2.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\stadapter.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\stream2string.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\tcp_connection.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\tiny_int.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\transaction.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\type_info.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\uds_connection.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\utility.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\vallist.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\wnp_connection.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\autoflag.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\beemutex.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\cmdline.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\common.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\comparable.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\mysql++\connection.h">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\connection_pool.h">
+      <Filter>Common\Database</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\gatewayserver\Entry.cpp">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\gateway_config.cpp">
+      <Filter>Gateway\Configs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\news_mgr.cpp">
+      <Filter>Gateway\News</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\gateway_server.cpp">
+      <Filter>Gateway\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\client_context.cpp">
+      <Filter>Gateway\Server\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\message_handler.cpp">
+      <Filter>Gateway\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\server_information.cpp">
+      <Filter>Gateway\Core\Informations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\blowfish.cpp">
+      <Filter>Common\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\silkroad_security.cpp">
+      <Filter>Common\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\stream_utility.cpp">
+      <Filter>Common\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\global_configs.cpp">
+      <Filter>Common\Configs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\global_manager.cpp">
+      <Filter>Gateway\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\gamesrv_manager.cpp">
+      <Filter>Gateway\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\download_manager.cpp">
+      <Filter>Gateway\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\database.cpp">
+      <Filter>Common\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\cpool.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\datetime.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\dbdriver.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\field_names.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\field_types.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\manip.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\myset.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\mysql++.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\mystring.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\null.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\options.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\qparms.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\query.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\result.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\row.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\scopedconnection.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\sql_buffer.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\sqlstream.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\ssqls2.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\stadapter.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\tcp_connection.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\transaction.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\type_info.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\uds_connection.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\utility.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\vallist.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\wnp_connection.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\beemutex.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\cmdline.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\mysql++\connection.cpp">
+      <Filter>Common\Database\mysql++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\connection_pool.cpp">
+      <Filter>Common\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gatewayserver\authentication.cpp">
+      <Filter>Gateway\Core\Informations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\binaries\configs\gateway.xml">
+      <Filter>Gateway\Configs</Filter>
+    </None>
+    <None Include="..\..\..\binaries\configs\global.xml">
+      <Filter>Common\Configs</Filter>
+    </None>
+    <None Include="..\..\common\mysql++\Doxyfile">
+      <Filter>Common\Database\mysql++</Filter>
+    </None>
+    <None Include="..\..\common\mysql++\Doxyfile.in">
+      <Filter>Common\Database\mysql++</Filter>
+    </None>
+    <None Include="..\..\common\mysql++\mysql++.h.in">
+      <Filter>Common\Database\mysql++</Filter>
+    </None>
+    <None Include="..\..\common\mysql++\querydef.pl">
+      <Filter>Common\Database\mysql++</Filter>
+    </None>
+    <None Include="..\..\common\mysql++\ssqls.pl">
+      <Filter>Common\Database\mysql++</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{eedef972-c247-4b1b-a9b2-8d07f0c76980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Security">
+      <UniqueIdentifier>{b792b0c4-fe9a-4349-aaca-6cbda8948aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\IO">
+      <UniqueIdentifier>{1f52bc64-d20d-4fd6-8993-250e204f78da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Configs">
+      <UniqueIdentifier>{829dd2ef-860e-458e-b0cd-9f672420be48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Packets">
+      <UniqueIdentifier>{ce7e369b-8761-49b2-9955-3049f0bd6577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{f4bd68b9-09cf-4d17-9cd3-48944d8665ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Server">
+      <UniqueIdentifier>{64e5c31f-9f7d-4923-98f4-97b99141ea68}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\shared_types.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\blowfish.h">
+      <Filter>Common\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\silkroad_security.h">
+      <Filter>Common\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\stream_utility.h">
+      <Filter>Common\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\global_configs.h">
+      <Filter>Common\Configs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\operations.h">
+      <Filter>Common\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\globalmanager\global_server.h">
+      <Filter>Global\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\singleton.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\blowfish.cpp">
+      <Filter>Common\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\silkroad_security.cpp">
+      <Filter>Common\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\stream_utility.cpp">
+      <Filter>Common\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\global_configs.cpp">
+      <Filter>Common\Configs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\globalmanager\Entry.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\globalmanager\global_server.cpp">
+      <Filter>Global\Server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\binaries\configs\global.xml">
+      <Filter>Common\Configs</Filter>
+    </None>
+  </ItemGroup>
+</Project>

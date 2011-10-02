@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\common\log.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\memory.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\threading.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="server.cpp" />
+    <ClCompile Include="..\common\database.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="gatewayserver.cpp">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="gatewayclient.cpp">
+      <Filter>Gateway</Filter>
+    </ClCompile>
+    <ClCompile Include="agentserver.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="agentclient.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\threading.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\database.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\log.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\lua.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\memory.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\opcodes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway.h">
+      <Filter>Gateway</Filter>
+    </ClInclude>
+    <ClInclude Include="agent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="update.h">
+      <Filter>Update</Filter>
+    </ClInclude>
+    <ClInclude Include="sremu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{bbbcee00-f5f3-470f-bf1f-b5b5287e1711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gateway">
+      <UniqueIdentifier>{c4b82691-a6d5-4437-8d4b-cda3b0a10738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agent">
+      <UniqueIdentifier>{8b2702a4-e643-44df-a230-2e180cd18d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Update">
+      <UniqueIdentifier>{8695977b-abd3-4901-9c26-cf8cecc379f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

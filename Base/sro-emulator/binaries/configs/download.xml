@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+
+<boost_serialization signature="serialization::archive" version="9">
+  <DownloadConfig class_id="0" tracking_level="1" version="0" object_id="_0">
+
+    <Port>15770</Port>
+    <Maximal_Speed>1000</Maximal_Speed>
+    <Maximal_Connections>1000</Maximal_Connections>
+
+    <Buffer_Size>3000</Buffer_Size>
+    
+  </DownloadConfig>
+</boost_serialization>

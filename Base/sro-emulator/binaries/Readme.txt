@@ -1,0 +1,1 @@
+After compile you can delete output - output 5 folders. they could have a large size.

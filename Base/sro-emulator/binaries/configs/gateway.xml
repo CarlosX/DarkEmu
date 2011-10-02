@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+
+<boost_serialization signature="serialization::archive" version="9">
+  <GatewayConfigs class_id="0" tracking_level="1" version="0" object_id="_0">
+
+    <Port>15779</Port>
+    <Maximal_Connections>1000</Maximal_Connections>
+    <DownloadServerAddress>127.0.0.1</DownloadServerAddress>
+    <DownloadServerPort>15770</DownloadServerPort>
+
+    <DatabaseHost>127.0.0.1</DatabaseHost>
+    <Database>silkroad_login</Database>
+    <Username>root</Username>
+    <Password></Password>
+    
+  </GatewayConfigs>
+</boost_serialization>
+
