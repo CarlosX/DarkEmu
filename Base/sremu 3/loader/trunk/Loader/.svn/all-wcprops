@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/sremu/!svn/ver/69/loader/trunk/Loader
+END
+loader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/sremu/!svn/ver/49/loader/trunk/Loader/loader.cpp
+END
+LoaderVC80.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/sremu/!svn/ver/69/loader/trunk/Loader/LoaderVC80.vcproj
+END
+LoaderVC90.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/sremu/!svn/ver/69/loader/trunk/Loader/LoaderVC90.vcproj
+END
+loader.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/sremu/!svn/ver/49/loader/trunk/Loader/loader.h
+END

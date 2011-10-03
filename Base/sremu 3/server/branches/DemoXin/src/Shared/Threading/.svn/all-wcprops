@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Threading
+END
+sync.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Threading/sync.h
+END
+sync.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Threading/sync.cpp
+END

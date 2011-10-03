@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/sremu/!svn/ver/62/server/branches/jMerliN/src
+END
+PacketReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/PacketReader.h
+END
+ServerSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/ServerSocket.cpp
+END
+Opcodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/Opcodes.h
+END
+Database.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/Database.cpp
+END
+PacketWriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/PacketWriter.cpp
+END
+ServerSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/ServerSocket.h
+END
+SREmu.sln
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/SREmu.sln
+END
+Socket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/Socket.cpp
+END
+Database.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/Database.h
+END
+PacketWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/PacketWriter.h
+END
+PacketReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/PacketReader.cpp
+END
+Socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/Socket.h
+END

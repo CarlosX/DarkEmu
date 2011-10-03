@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core
+END
+GameServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/GameServer.cpp
+END
+Auth.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Auth.cpp
+END
+Player.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Player.h
+END
+Skills.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Skills.cpp
+END
+Guild.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Guild.cpp
+END
+PlayerSpawn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/PlayerSpawn.cpp
+END
+Position.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Position.h
+END
+Monsters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Monsters.cpp
+END
+CoreVC80.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/CoreVC80.vcproj
+END
+CoreVC90.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/CoreVC90.vcproj
+END
+ObjectMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/ObjectMgr.cpp
+END
+Chat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Chat.cpp
+END
+Players.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Players.cpp
+END
+ObjectMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/ObjectMgr.h
+END
+Items.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Items.cpp
+END
+GameSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/GameSocket.cpp
+END
+GameMaster.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/GameMaster.cpp
+END
+Items.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Items.h
+END
+GameSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/GameSocket.h
+END
+Movement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Movement.cpp
+END
+Character.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Core/Character.cpp
+END

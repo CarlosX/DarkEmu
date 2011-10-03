@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/sremu/!svn/ver/62/server/branches/jMerliN/src/Shared
+END
+log.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/Shared/log.cpp
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/sremu/!svn/ver/59/server/branches/jMerliN/src/Shared/log.h
+END
+Shared.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/sremu/!svn/ver/62/server/branches/jMerliN/src/Shared/Shared.vcproj
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/62/server/branches/jMerliN/src/Shared/common.h
+END

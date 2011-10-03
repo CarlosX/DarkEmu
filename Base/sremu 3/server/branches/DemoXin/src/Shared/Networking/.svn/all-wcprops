@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Networking
+END
+BinaryWriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Networking/BinaryWriter.h
+END
+PacketBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Networking/PacketBuffer.h
+END
+SimpleBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Networking/SimpleBuffer.h
+END
+Socket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Networking/Socket.cpp
+END
+SocketManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Networking/SocketManager.h
+END
+BinaryReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Networking/BinaryReader.h
+END
+Socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Networking/Socket.h
+END

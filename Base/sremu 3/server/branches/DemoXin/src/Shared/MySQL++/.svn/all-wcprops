@@ -1,0 +1,395 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++
+END
+connection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/connection.cpp
+END
+options.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/options.h
+END
+mysql++.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/mysql++.h
+END
+type_info.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/type_info.h
+END
+datetime.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/datetime.h
+END
+manip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/manip.cpp
+END
+query.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/query.cpp
+END
+field_types.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/field_types.cpp
+END
+qparms.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/qparms.h
+END
+stream2string.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/stream2string.h
+END
+row.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/row.h
+END
+custom.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/custom.h
+END
+beemutex.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/beemutex.h
+END
+noexceptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/noexceptions.h
+END
+transaction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/transaction.cpp
+END
+stadapter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/stadapter.cpp
+END
+options.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/options.cpp
+END
+mysql++.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/mysql++.cpp
+END
+qparms.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/qparms.cpp
+END
+dbdriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/dbdriver.h
+END
+field_names.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/field_names.cpp
+END
+row.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/row.cpp
+END
+manip.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/manip.h
+END
+uds_connection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/uds_connection.cpp
+END
+comparable.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/comparable.h
+END
+null.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/null.cpp
+END
+cpool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/cpool.cpp
+END
+mystring.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/mystring.cpp
+END
+vallist.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/vallist.cpp
+END
+result.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/result.cpp
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/LICENSE.txt
+END
+wnp_connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/wnp_connection.h
+END
+querydef.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/querydef.h
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/README.txt
+END
+dbdriver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/dbdriver.cpp
+END
+refcounted.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/refcounted.h
+END
+myset.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/myset.h
+END
+tcp_connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/tcp_connection.h
+END
+field_names.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/field_names.h
+END
+uds_connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/uds_connection.h
+END
+null.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/null.h
+END
+cpool.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/cpool.h
+END
+mystring.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/mystring.h
+END
+wnp_connection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/wnp_connection.cpp
+END
+vallist.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/vallist.h
+END
+result.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/result.h
+END
+sql_buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/sql_buffer.cpp
+END
+type_info.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/type_info.cpp
+END
+datetime.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/datetime.cpp
+END
+myset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/myset.cpp
+END
+tiny_int.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/tiny_int.h
+END
+connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/connection.h
+END
+tcp_connection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/tcp_connection.cpp
+END
+autoflag.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/autoflag.h
+END
+ssqls.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/ssqls.h
+END
+query.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/query.h
+END
+field_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/field_types.h
+END
+beemutex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/beemutex.cpp
+END
+exceptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/exceptions.h
+END
+sql_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/sql_types.h
+END
+field.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/field.h
+END
+transaction.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/transaction.h
+END
+stadapter.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/stadapter.h
+END
+sql_buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/sql_buffer.h
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/MySQL++/common.h
+END

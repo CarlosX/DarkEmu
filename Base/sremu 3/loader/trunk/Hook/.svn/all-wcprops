@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/sremu/!svn/ver/69/loader/trunk/Hook
+END
+dllmain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/sremu/!svn/ver/64/loader/trunk/Hook/dllmain.cpp
+END
+hook.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/sremu/!svn/ver/65/loader/trunk/Hook/hook.cpp
+END
+HookVC80.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/sremu/!svn/ver/69/loader/trunk/Hook/HookVC80.vcproj
+END
+hiding.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/sremu/!svn/ver/62/loader/trunk/Hook/hiding.cpp
+END
+sig.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/sremu/!svn/ver/62/loader/trunk/Hook/sig.cpp
+END
+HookVC90.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/sremu/!svn/ver/69/loader/trunk/Hook/HookVC90.vcproj
+END
+detours.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/sremu/!svn/ver/62/loader/trunk/Hook/detours.cpp
+END
+hook.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/sremu/!svn/ver/65/loader/trunk/Hook/hook.h
+END
+logging.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/sremu/!svn/ver/62/loader/trunk/Hook/logging.cpp
+END
+packet_dumping.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/sremu/!svn/ver/64/loader/trunk/Hook/packet_dumping.cpp
+END

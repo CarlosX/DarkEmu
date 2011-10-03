@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Auth
+END
+LoginServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Auth/LoginServer.cpp
+END
+LoginSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Auth/LoginSocket.cpp
+END
+AuthVC80.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Auth/AuthVC80.vcproj
+END
+AuthVC90.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Auth/AuthVC90.vcproj
+END
+LoginSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Auth/LoginSocket.h
+END

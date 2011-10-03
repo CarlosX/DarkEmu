@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loader", "Loader\LoaderVC80.vcproj", "{88682F35-A33E-4F64-98E2-7FBE1B24B426}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hook", "Hook\HookVC80.vcproj", "{FF888358-1625-4649-9C0F-8C670A8F94BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88682F35-A33E-4F64-98E2-7FBE1B24B426}.Debug|Win32.ActiveCfg = Debug|Win32
+		{88682F35-A33E-4F64-98E2-7FBE1B24B426}.Debug|Win32.Build.0 = Debug|Win32
+		{88682F35-A33E-4F64-98E2-7FBE1B24B426}.Release|Win32.ActiveCfg = Release|Win32
+		{88682F35-A33E-4F64-98E2-7FBE1B24B426}.Release|Win32.Build.0 = Release|Win32
+		{FF888358-1625-4649-9C0F-8C670A8F94BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF888358-1625-4649-9C0F-8C670A8F94BC}.Debug|Win32.Build.0 = Debug|Win32
+		{FF888358-1625-4649-9C0F-8C670A8F94BC}.Release|Win32.ActiveCfg = Release|Win32
+		{FF888358-1625-4649-9C0F-8C670A8F94BC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

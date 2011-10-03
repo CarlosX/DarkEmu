@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared
+END
+log.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/log.cpp
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/log.h
+END
+SharedVC80.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/SharedVC80.vcproj
+END
+SharedVC90.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/SharedVC90.vcproj
+END
+Common.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Common.h
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/sremu/!svn/ver/75/server/trunk
+END
+backup_db.bat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/sremu/!svn/ver/72/server/trunk/backup_db.bat
+END
+GPL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/sremu/!svn/ver/49/server/trunk/GPL.txt
+END

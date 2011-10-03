@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include
+END
+my_net.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_net.h
+END
+sslopt-case.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/sslopt-case.h
+END
+decimal.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/decimal.h
+END
+my_alloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_alloc.h
+END
+mysqld_ername.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/mysqld_ername.h
+END
+config-win.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/config-win.h
+END
+mysql_embed.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/mysql_embed.h
+END
+mysql.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/mysql.h
+END
+my_xml.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_xml.h
+END
+my_global.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_global.h
+END
+sql_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/sql_common.h
+END
+my_list.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_list.h
+END
+my_sys.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_sys.h
+END
+my_no_pthread.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_no_pthread.h
+END
+my_pthread.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_pthread.h
+END
+sslopt-vars.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/sslopt-vars.h
+END
+sql_state.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/sql_state.h
+END
+errmsg.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/errmsg.h
+END
+m_ctype.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/m_ctype.h
+END
+mysql_com.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/mysql_com.h
+END
+libmysql.def
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/libmysql.def
+END
+my_getopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_getopt.h
+END
+my_attribute.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_attribute.h
+END
+typelib.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/typelib.h
+END
+mysql_version.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/mysql_version.h
+END
+keycache.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/keycache.h
+END
+mysqld_error.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/mysqld_error.h
+END
+m_string.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/m_string.h
+END
+mysql_time.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/mysql_time.h
+END
+my_dir.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_dir.h
+END
+my_dbug.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/my_dbug.h
+END
+sslopt-longopts.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/libmysql/include/sslopt-longopts.h
+END

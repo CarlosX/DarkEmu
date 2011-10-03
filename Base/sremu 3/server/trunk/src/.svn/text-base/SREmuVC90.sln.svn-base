@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Auth", "Auth\AuthVC90.vcproj", "{D0A10E30-D869-4CE7-A4DD-EF7607B4FCAA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Core\CoreVC90.vcproj", "{4B470A6C-C9E8-476B-9EFC-C7934F63E12B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shared", "Shared\SharedVC90.vcproj", "{68A1E1E3-55D4-400A-8298-18029B25327C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0A10E30-D869-4CE7-A4DD-EF7607B4FCAA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0A10E30-D869-4CE7-A4DD-EF7607B4FCAA}.Debug|Win32.Build.0 = Debug|Win32
+		{D0A10E30-D869-4CE7-A4DD-EF7607B4FCAA}.Release|Win32.ActiveCfg = Release|Win32
+		{D0A10E30-D869-4CE7-A4DD-EF7607B4FCAA}.Release|Win32.Build.0 = Release|Win32
+		{4B470A6C-C9E8-476B-9EFC-C7934F63E12B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B470A6C-C9E8-476B-9EFC-C7934F63E12B}.Debug|Win32.Build.0 = Debug|Win32
+		{4B470A6C-C9E8-476B-9EFC-C7934F63E12B}.Release|Win32.ActiveCfg = Release|Win32
+		{4B470A6C-C9E8-476B-9EFC-C7934F63E12B}.Release|Win32.Build.0 = Release|Win32
+		{68A1E1E3-55D4-400A-8298-18029B25327C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68A1E1E3-55D4-400A-8298-18029B25327C}.Debug|Win32.Build.0 = Debug|Win32
+		{68A1E1E3-55D4-400A-8298-18029B25327C}.Release|Win32.ActiveCfg = Release|Win32
+		{68A1E1E3-55D4-400A-8298-18029B25327C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

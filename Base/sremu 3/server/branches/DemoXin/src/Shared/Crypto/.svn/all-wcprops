@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Crypto
+END
+silkroad_crypt.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Crypto/silkroad_crypt.h
+END
+blowfish.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Crypto/blowfish.h
+END
+md5.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Crypto/md5.cpp
+END
+silkroad_crypt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Crypto/silkroad_crypt.cpp
+END
+md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Crypto/md5.h
+END
+blowfish.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/src/Shared/Crypto/blowfish.cpp
+END

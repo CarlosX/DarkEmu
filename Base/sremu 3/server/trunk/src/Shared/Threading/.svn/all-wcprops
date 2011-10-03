@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/sremu/!svn/ver/70/server/trunk/src/Shared/Threading
+END
+sync.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/sremu/!svn/ver/70/server/trunk/src/Shared/Threading/sync.h
+END
+sync.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/70/server/trunk/src/Shared/Threading/sync.cpp
+END

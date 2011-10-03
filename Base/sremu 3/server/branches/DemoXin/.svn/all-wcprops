@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin
+END
+backup_db.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/backup_db.bat
+END
+GPL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/sremu/!svn/ver/78/server/branches/DemoXin/GPL.txt
+END

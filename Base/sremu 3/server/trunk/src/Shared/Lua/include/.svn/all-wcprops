@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include
+END
+lauxlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lauxlib.c
+END
+ldebug.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ldebug.c
+END
+lauxlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lauxlib.h
+END
+ldebug.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ldebug.h
+END
+ltablib.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ltablib.c
+END
+liolib.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/liolib.c
+END
+lstrlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lstrlib.c
+END
+lualib.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lualib.h
+END
+ldo.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ldo.c
+END
+ldump.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ldump.c
+END
+ldo.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ldo.h
+END
+loslib.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/loslib.c
+END
+luac.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/luac.c
+END
+lundump.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lundump.c
+END
+lua.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lua.hpp
+END
+ldblib.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ldblib.c
+END
+lundump.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lundump.h
+END
+lmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lmem.c
+END
+lmathlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lmathlib.c
+END
+lstate.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lstate.c
+END
+ltm.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ltm.c
+END
+lvm.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lvm.c
+END
+lmem.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lmem.h
+END
+lstate.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lstate.h
+END
+ltm.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ltm.h
+END
+ltable.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ltable.c
+END
+lvm.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lvm.h
+END
+llex.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/llex.c
+END
+lgc.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lgc.c
+END
+loadlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/loadlib.c
+END
+lfunc.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lfunc.c
+END
+lparser.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lparser.c
+END
+lopcodes.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lopcodes.c
+END
+ltable.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/ltable.h
+END
+llex.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/llex.h
+END
+lgc.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lgc.h
+END
+lfunc.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lfunc.h
+END
+lopcodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lopcodes.h
+END
+lbaselib.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lbaselib.c
+END
+lparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lparser.h
+END
+lzio.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lzio.c
+END
+linit.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/linit.c
+END
+lua.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lua.c
+END
+lobject.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lobject.c
+END
+llimits.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/llimits.h
+END
+lstring.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lstring.c
+END
+lzio.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lzio.h
+END
+lapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lapi.c
+END
+lcode.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lcode.c
+END
+lua.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lua.h
+END
+lobject.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lobject.h
+END
+lstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lstring.h
+END
+lapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lapi.h
+END
+lcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/lcode.h
+END
+luaconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/luaconf.h
+END
+print.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Shared/Lua/include/print.c
+END

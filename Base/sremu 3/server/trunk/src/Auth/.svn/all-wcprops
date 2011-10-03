@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/sremu/!svn/ver/67/server/trunk/src/Auth
+END
+LoginServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Auth/LoginServer.cpp
+END
+LoginSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Auth/LoginSocket.cpp
+END
+AuthVC80.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/sremu/!svn/ver/67/server/trunk/src/Auth/AuthVC80.vcproj
+END
+AuthVC90.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/sremu/!svn/ver/67/server/trunk/src/Auth/AuthVC90.vcproj
+END
+LoginSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/sremu/!svn/ver/49/server/trunk/src/Auth/LoginSocket.h
+END
