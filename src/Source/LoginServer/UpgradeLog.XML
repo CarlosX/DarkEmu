@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Silkroad LoginServer OS">
+</Property><Property Name="Archivo de la solución" Value="D:\Silkroad\csremu\Source\LoginServer\Silkroad LoginServer OS.sln">
+</Property><Property Name="Date" Value="Lunes, 03 de Octubre de 2011">
+</Property><Property Name="Time" Value="14:36 p.m.">
+</Property></Properties><Event ErrorLevel="0" Project="Silkroad LoginServer OS" Source="Silkroad LoginServer OS.csproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="Silkroad LoginServer OS" Source="Silkroad LoginServer OS.csproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="" Source="Silkroad LoginServer OS.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="Silkroad LoginServer OS.sln" Description="Converted">
+</Event></UpgradeLog>
