@@ -41,7 +41,7 @@ namespace DarkEmu_GameServer
             DatabaseCore.SetQueryLocation("tmpQueryGameServer.txt");
             DatabaseCore.Start();
 
-            Console.WriteLine("Data from database loaded.Changes on the database wont effect the server now!");
+            Console.WriteLine("Data from database loaded, Changes on the database wont effect the server now!");
 
             Timers.LoadTimers();
             Silkroad.DumpObjects();
@@ -59,14 +59,6 @@ namespace DarkEmu_GameServer
         {
             switch (cmd)
             {                    
-                case "show c":
-                    string tmp = System.IO.File.ReadAllText("GPL.txt");
-                    Console.WriteLine("Part 1:(press enter for part 2)");
-                    Console.WriteLine(tmp.Substring(0, tmp.Length / 2));
-                    Console.ReadLine();
-                    Console.WriteLine(tmp.Substring(tmp.Length / 2));
-                    break;
-
                 case "help":
                     Console.WriteLine("clear - clears the console\nplayers - shows how many players are online\nnotice - send a global server notice\ndebug - see the packetflow\nexit - exit this application");
                     break;
@@ -74,7 +66,7 @@ namespace DarkEmu_GameServer
                 case "clear":
                     Console.Clear();
                     Console.WriteLine("-------------------------------------------------------");
-                    Console.WriteLine(" <Silkroad Gameserver>  Copyright (C) <2011>  <DarkEmu>\nThis program comes with ABSOLUTELY NO WARRANTY; for details take a look at the \nGPL.txt.This is free software, and you are welcome to redistribute it\nunder certain conditions.For more information look at the GPL.txt or type ‘show c’ for details.");
+                    Console.WriteLine(" <Silkroad Gameserver>  Copyright (C) <2011>  <DarkEmu>");
                     Console.WriteLine("-------------------------------------------------------");
                     break;
 
