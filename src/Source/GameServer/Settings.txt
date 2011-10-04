@@ -2,4 +2,4 @@ IP:127.0.0.1
 Port:3306
 DatabaseName:emulator
 User:root
-Password:
+Password:123456
