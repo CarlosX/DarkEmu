@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/srevolution/!svn/ver/180/trunk/Game/Gamesystem/Party
+END
+Definitions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/srevolution/!svn/ver/163/trunk/Game/Gamesystem/Party/Definitions.cs
+END
+Listening.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/163/trunk/Game/Gamesystem/Party/Listening.cs
+END
+Join.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/srevolution/!svn/ver/180/trunk/Game/Gamesystem/Party/Join.cs
+END
+Renaming.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/srevolution/!svn/ver/163/trunk/Game/Gamesystem/Party/Renaming.cs
+END
+Deletion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/srevolution/!svn/ver/180/trunk/Game/Gamesystem/Party/Deletion.cs
+END
+Creation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/srevolution/!svn/ver/180/trunk/Game/Gamesystem/Party/Creation.cs
+END
+Enums.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/srevolution/!svn/ver/163/trunk/Game/Gamesystem/Party/Enums.cs
+END

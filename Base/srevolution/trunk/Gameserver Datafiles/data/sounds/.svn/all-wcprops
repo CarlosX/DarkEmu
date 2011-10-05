@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/193/trunk/Gameserver%20Datafiles/data/sounds
+END
+complete_load.wav
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/srevolution/!svn/ver/193/trunk/Gameserver%20Datafiles/data/sounds/complete_load.wav
+END
+error.wav
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/srevolution/!svn/ver/193/trunk/Gameserver%20Datafiles/data/sounds/error.wav
+END
+loading.wav
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/srevolution/!svn/ver/193/trunk/Gameserver%20Datafiles/data/sounds/loading.wav
+END
+info_enviroment.wav
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/srevolution/!svn/ver/193/trunk/Gameserver%20Datafiles/data/sounds/info_enviroment.wav
+END
+server_starting.wav
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/srevolution/!svn/ver/193/trunk/Gameserver%20Datafiles/data/sounds/server_starting.wav
+END

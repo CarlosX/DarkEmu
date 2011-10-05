@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.1.0.7794-beta
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[SRX] Login", "[SRX] Login.csproj", "{EAEC4E16-A76F-4DFA-91EA-0267A76775D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|MCD = Debug|MCD
+		Release|MCD = Release|MCD
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAEC4E16-A76F-4DFA-91EA-0267A76775D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEC4E16-A76F-4DFA-91EA-0267A76775D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEC4E16-A76F-4DFA-91EA-0267A76775D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEC4E16-A76F-4DFA-91EA-0267A76775D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEC4E16-A76F-4DFA-91EA-0267A76775D8}.Debug|MCD.Build.0 = Debug|MCD
+		{EAEC4E16-A76F-4DFA-91EA-0267A76775D8}.Debug|MCD.ActiveCfg = Debug|MCD
+		{EAEC4E16-A76F-4DFA-91EA-0267A76775D8}.Release|MCD.Build.0 = Release|MCD
+		{EAEC4E16-A76F-4DFA-91EA-0267A76775D8}.Release|MCD.ActiveCfg = Release|MCD
+	EndGlobalSection
+EndGlobal

@@ -30,18 +30,22 @@ namespace DarkEmu_GameServer
             reader = Reader_;
 
             byte pType = reader.ReadByte();
+            Console.WriteLine("pType: {0}",pType);
             switch (pType)
             {
                 case 1:
+                    Console.WriteLine("Char Creation");
                     OnCharCreation(Reader_, Index_);
                     break;
                 case 2:
+                    Console.WriteLine("Char List");
                     SendCharacterList(Index_);
                     break;
                 case 3:
                     //  OnCharDeletion(Reader_, Index_);
                     break;
                 case 4:
+                    Console.WriteLine("Char Name Check");
                     OnCharnameCheck(Reader_, Index_);
                     break;
                 case 5:
@@ -65,7 +69,8 @@ namespace DarkEmu_GameServer
                 int tmpCharacterIndex = DatabaseCore.Character.GetIndexByName(DatabaseCore.User.Characters[UserIndex].CharacterName[i]);
                 int[] CharacterItemIndex = DatabaseCore.Item.GetIndexByName(DatabaseCore.User.Characters[UserIndex].CharacterName[i]);
 
-                writer.AppendDword(DatabaseCore.Character.Model[tmpCharacterIndex]); writer.AppendWord((ushort)DatabaseCore.Character.CharacterName[tmpCharacterIndex].Length);
+                writer.AppendDword(DatabaseCore.Character.Model[tmpCharacterIndex]); 
+                writer.AppendWord((ushort)DatabaseCore.Character.CharacterName[tmpCharacterIndex].Length);
                 writer.AppendString(false, DatabaseCore.Character.CharacterName[tmpCharacterIndex]);
                 writer.AppendByte(DatabaseCore.Character.Volume[tmpCharacterIndex]);
                 writer.AppendByte(DatabaseCore.Character.Level[tmpCharacterIndex]);
@@ -75,7 +80,11 @@ namespace DarkEmu_GameServer
                 writer.AppendWord(DatabaseCore.Character.Attributes[tmpCharacterIndex]);
                 writer.AppendInt(DatabaseCore.Character.CHP[tmpCharacterIndex]);
                 writer.AppendInt(DatabaseCore.Character.CMP[tmpCharacterIndex]);
-                writer.AppendDword(0x00);
+                //writer.AppendDword(0x00);
+                writer.AppendByte(0x00);
+                writer.AppendByte(0x00);
+                writer.AppendByte(0x00);
+                writer.AppendByte(0x01);
 
                 byte PlayerItemCount = 0;
                 for (byte j = 0; j < 10; j++)
@@ -94,6 +103,7 @@ namespace DarkEmu_GameServer
                     }
                 }
 
+                writer.AppendByte(0x00);
                 writer.AppendByte(0x00);
             }
 

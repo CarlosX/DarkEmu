@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/srevolution/!svn/ver/214/trunk/Game/Filesystem
+END
+Load_Items.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/srevolution/!svn/ver/214/trunk/Game/Filesystem/Load_Items.cs
+END
+Load_Skills.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/srevolution/!svn/ver/198/trunk/Game/Filesystem/Load_Skills.cs
+END
+Load_Drops.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/srevolution/!svn/ver/198/trunk/Game/Filesystem/Load_Drops.cs
+END
+Load_Data.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/srevolution/!svn/ver/209/trunk/Game/Filesystem/Load_Data.cs
+END
+Load_Objects.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/srevolution/!svn/ver/198/trunk/Game/Filesystem/Load_Objects.cs
+END

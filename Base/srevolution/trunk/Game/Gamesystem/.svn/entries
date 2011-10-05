@@ -1,0 +1,61 @@
+10
+
+dir
+216
+https://svn.assembla.com/svn/srevolution/trunk/Game/Gamesystem
+https://svn.assembla.com/svn/srevolution
+
+
+
+2011-09-09T11:54:45.770267Z
+212
+CEZALAND
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d25517e7-fd30-4425-94d1-815ab26094fd
+
+GuildPackets
+dir
+
+Party
+dir
+
+Actions
+dir
+
+AttackingPackets
+dir
+
+Quest
+dir
+
+Guild
+dir
+
+CharacterPackets
+dir
+
+PartyPackets
+dir
+
+Character
+dir
+
+QuestPackets
+dir
+
+Messaging
+dir
+

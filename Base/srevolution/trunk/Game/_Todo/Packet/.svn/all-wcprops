@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/srevolution/!svn/ver/215/trunk/Game/_Todo/Packet
+END
+StoragePackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/StoragePackets.cs
+END
+UniquePackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/UniquePackets.cs
+END
+RankListeningPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/RankListeningPackets.cs
+END
+LoginPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/LoginPackets.cs
+END
+GuildSystemPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/GuildSystemPackets.cs
+END
+JobSystemPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/JobSystemPackets.cs
+END
+NpcPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/NpcPackets.cs
+END
+AttackpetPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/AttackpetPackets.cs
+END
+CharacterLoad.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/132/trunk/Game/_Todo/Packet/CharacterLoad.cs
+END
+ExchangePackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/srevolution/!svn/ver/149/trunk/Game/_Todo/Packet/ExchangePackets.cs
+END
+AlchemyPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/AlchemyPackets.cs
+END
+SkillSystemPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/SkillSystemPackets.cs
+END
+MessagePackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/MessagePackets.cs
+END
+GrabpetPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/GrabpetPackets.cs
+END
+StallSystemPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/srevolution/!svn/ver/149/trunk/Game/_Todo/Packet/StallSystemPackets.cs
+END
+LeaveGamePackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/LeaveGamePackets.cs
+END
+SpawnPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/srevolution/!svn/ver/188/trunk/Game/_Todo/Packet/SpawnPackets.cs
+END
+PlayerActionPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/srevolution/!svn/ver/215/trunk/Game/_Todo/Packet/PlayerActionPackets.cs
+END
+MovementPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/MovementPackets.cs
+END
+FriendsPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/FriendsPackets.cs
+END
+ItemActionPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/srevolution/!svn/ver/149/trunk/Game/_Todo/Packet/ItemActionPackets.cs
+END
+TransportPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/TransportPackets.cs
+END
+TeleportPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/srevolution/!svn/ver/124/trunk/Game/_Todo/Packet/TeleportPackets.cs
+END

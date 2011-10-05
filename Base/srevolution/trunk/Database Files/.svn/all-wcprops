@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files
+END
+character_tickets.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/character_tickets.sql
+END
+saved_skills.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/saved_skills.sql
+END
+message.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/message.sql
+END
+mastery.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/mastery.sql
+END
+guild_storage.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/guild_storage.sql
+END
+friends_groups.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/friends_groups.sql
+END
+friends.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/friends.sql
+END
+character.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/srevolution/!svn/ver/175/trunk/Database%20Files/character.sql
+END
+guild_unions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/guild_unions.sql
+END
+character_quests.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/character_quests.sql
+END
+rank_honor.sql
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/rank_honor.sql
+END
+settings.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/settings.sql
+END
+rank_job_activity.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/rank_job_activity.sql
+END
+users.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/srevolution/!svn/ver/171/trunk/Database%20Files/users.sql
+END
+guild.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/guild.sql
+END
+server.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/server.sql
+END
+character_rev.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/character_rev.sql
+END
+character_jobs.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/character_jobs.sql
+END
+pets.sql
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/pets.sql
+END
+news.sql
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/news.sql
+END
+guild_war.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/guild_war.sql
+END
+guild_members.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/guild_members.sql
+END
+char_items.sql
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/char_items.sql
+END
+rank_job_donate.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/srevolution/!svn/ver/208/trunk/Database%20Files/rank_job_donate.sql
+END

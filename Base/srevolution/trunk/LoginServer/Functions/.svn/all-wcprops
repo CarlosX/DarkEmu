@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/srevolution/!svn/ver/213/trunk/LoginServer/Functions
+END
+Function_Connect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/srevolution/!svn/ver/127/trunk/LoginServer/Functions/Function_Connect.cs
+END
+Function_News.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/srevolution/!svn/ver/213/trunk/LoginServer/Functions/Function_News.cs
+END
+Function_Patch.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/srevolution/!svn/ver/188/trunk/LoginServer/Functions/Function_Patch.cs
+END
+Function_Select.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/srevolution/!svn/ver/127/trunk/LoginServer/Functions/Function_Select.cs
+END

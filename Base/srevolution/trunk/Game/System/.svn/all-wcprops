@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/srevolution/!svn/ver/205/trunk/Game/System
+END
+Opcodes.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/srevolution/!svn/ver/180/trunk/Game/System/Opcodes.cs
+END
+OpcodesSwitch.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/srevolution/!svn/ver/164/trunk/Game/System/OpcodesSwitch.cs
+END
+Sendinformation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/srevolution/!svn/ver/124/trunk/Game/System/Sendinformation.cs
+END
+Debugger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/srevolution/!svn/ver/124/trunk/Game/System/Debugger.cs
+END
+Getinformation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/srevolution/!svn/ver/124/trunk/Game/System/Getinformation.cs
+END
+UpdateServer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/srevolution/!svn/ver/205/trunk/Game/System/UpdateServer.cs
+END

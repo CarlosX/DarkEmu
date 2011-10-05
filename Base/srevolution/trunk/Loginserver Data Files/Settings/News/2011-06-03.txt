@@ -1,0 +1,8 @@
+Welcome to SRX alpha
+Hello world,<br>
+  Welcome to<font color="#CCFF00"> [SRX] </font>alpha test.
+  In this test you will be able to move and attack
+  <font color="#FF0000">Why only this ?</font>
+  Because we have to test out the funtions fully
+  Meaning the ones we worked hard on.
+  <a href="http://xcoding.net">Visit xcoding click here</a>

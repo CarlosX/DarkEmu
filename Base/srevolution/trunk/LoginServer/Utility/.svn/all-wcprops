@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Utility
+END
+Framework.MSSQL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Utility/Framework.MSSQL.cs
+END
+Print.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Utility/Print.cs
+END
+INI.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Utility/INI.cs
+END
+Decode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Utility/Decode.cs
+END
+PacketWriter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Utility/PacketWriter.cs
+END
+MD5.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Utility/MD5.cs
+END
+Networking.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Utility/Networking.cs
+END
+PacketReader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Utility/PacketReader.cs
+END

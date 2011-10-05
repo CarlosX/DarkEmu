@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/srevolution/!svn/ver/180/trunk/Game/Gamesystem/PartyPackets
+END
+RequestPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/srevolution/!svn/ver/165/trunk/Game/Gamesystem/PartyPackets/RequestPackets.cs
+END
+PartyDataPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/srevolution/!svn/ver/180/trunk/Game/Gamesystem/PartyPackets/PartyDataPackets.cs
+END
+JoinPackets.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/srevolution/!svn/ver/165/trunk/Game/Gamesystem/PartyPackets/JoinPackets.cs
+END

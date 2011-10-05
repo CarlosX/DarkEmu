@@ -41,7 +41,10 @@ namespace DarkEmu_GameServer
             {
                 case CLIENT_OPCODES.GAME_CLIENT_KEEP_ALIVE:
                 case CLIENT_OPCODES.GAME_CLIENT_ACCEPT_HANDSHAKE:
-                    Debugx.DumpBuffer(buffer, 1, tmpPacket->opcode, tmpPacket->size);
+                    /*if(debug)
+                        Debugx.DumpBuffer(buffer, 1, tmpPacket->opcode, tmpPacket->size);*/
+                    //hansh(Index);
+                    Auth.SendServerInfo(Index);  //force cliente acept xD
                     break;
                 case CLIENT_OPCODES.GAME_CLIENT_INFO:
                     Auth.SendServerInfo(Index);
@@ -132,8 +135,14 @@ namespace DarkEmu_GameServer
                     break;
             }
 
-        }         
-
+        }
+        private static void hansh(int Index)
+        {
+            PacketWriter writer = new PacketWriter();
+            writer.SetOpcode(0x5000);
+            writer.AppendByte(1);//NO HANDSHAKE
+            ServerSocket.Send(writer.getWorkspace(), Index); 
+        }
         private static void OnGameQuit(PacketReader reader_,int Index_) 
         {
             byte type = reader_.ReadByte();

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/srevolution/!svn/ver/176/trunk/Game/Gamesystem/Guild
+END
+GuildPromotion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/srevolution/!svn/ver/172/trunk/Game/Gamesystem/Guild/GuildPromotion.cs
+END
+GuildMessages.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/srevolution/!svn/ver/167/trunk/Game/Gamesystem/Guild/GuildMessages.cs
+END
+GuildIcon.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/124/trunk/Game/Gamesystem/Guild/GuildIcon.cs
+END
+GuildData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/176/trunk/Game/Gamesystem/Guild/GuildData.cs
+END
+GuildWar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/srevolution/!svn/ver/124/trunk/Game/Gamesystem/Guild/GuildWar.cs
+END
+GuildPermissions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/srevolution/!svn/ver/176/trunk/Game/Gamesystem/Guild/GuildPermissions.cs
+END
+GuildPoints.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/srevolution/!svn/ver/170/trunk/Game/Gamesystem/Guild/GuildPoints.cs
+END
+GuildInvite.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/srevolution/!svn/ver/172/trunk/Game/Gamesystem/Guild/GuildInvite.cs
+END
+GuildPlayerTitle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/srevolution/!svn/ver/168/trunk/Game/Gamesystem/Guild/GuildPlayerTitle.cs
+END
+GuildDeletion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/srevolution/!svn/ver/171/trunk/Game/Gamesystem/Guild/GuildDeletion.cs
+END
+GuildCreation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/srevolution/!svn/ver/172/trunk/Game/Gamesystem/Guild/GuildCreation.cs
+END
+GuildStorage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/srevolution/!svn/ver/176/trunk/Game/Gamesystem/Guild/GuildStorage.cs
+END
+GuildTransfer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/srevolution/!svn/ver/169/trunk/Game/Gamesystem/Guild/GuildTransfer.cs
+END

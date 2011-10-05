@@ -49,7 +49,8 @@ namespace DarkEmu_LoginServer
                     SendServerList(ClientIndex);
                     break;
                 case CLIENT_OPCODES.LOGIN_CLIENT_AUTH:
-                    Debugx.DumpBuffer(buffer, 1, tmpPacket->opcode, tmpPacket->size);
+                    /*if (debug)
+                        Debugx.DumpBuffer(buffer, 1, tmpPacket->opcode, tmpPacket->size);*/
                     SendLogin(buffer, ClientIndex);
                     break;
                 case CLIENT_OPCODES.LOGIN_CLIENT_LAUNCHER_UNK1:
@@ -206,9 +207,10 @@ namespace DarkEmu_LoginServer
 
             for (int i = 1; i < DatabaseCore.Server.NumberOfServer; i++)
             {
-                writer.AppendByte(1);
+                writer.AppendByte(0x01);
                 writer.AppendWord(DatabaseCore.Server.ServerId[i]);
-                writer.AppendWord((ushort)DatabaseCore.Server.ServerName[i].Length);
+                writer.AppendWord((ushort)(DatabaseCore.Server.ServerName[i].Length+1));
+                writer.AppendByte(0x31); // flag xD usa
                 writer.AppendString(false, DatabaseCore.Server.ServerName[i]);
                 writer.AppendWord(DatabaseCore.Server.CurUser[i]);
                 writer.AppendWord(DatabaseCore.Server.MaxUser[i]);
@@ -220,6 +222,20 @@ namespace DarkEmu_LoginServer
 
         private static void SendLogin(byte[] buffer, int ClientIndex)
         {
+            /*
+            16 00 L
+            02 61 Opcode
+            00 00 Secu
+            
+            12 Leng_total
+            07 00 Leng_String
+            63 61 72 6C 6F 73 78 = carlosx
+            07 00 Leng_String
+            63 61 72 6C 6F 73 78 = carlosx
+            
+            FF unk
+            03 ServerID
+            */
             PacketWriter writer = new PacketWriter();
             PacketReader reader = new PacketReader(buffer, buffer.Length);
             reader.ModifyIndex(7);
@@ -230,7 +246,10 @@ namespace DarkEmu_LoginServer
             ushort passlen = reader.ReadWord();
             string pass = reader.ReadString(false, passlen);
 
-            ushort serverid = reader.ReadWord();
+            reader.ReadByte();
+            ushort serverid = reader.ReadByte();
+
+            Console.WriteLine("User:{0} - Password:{1} - ServerId:{2}",user,pass,serverid);
 
             int UserIndex = DatabaseCore.User.GetIndexByName(user);
 
@@ -285,13 +304,19 @@ namespace DarkEmu_LoginServer
                     writer.SetOpcode(SERVER_OPCODES.LOGIN_SERVER_AUTH_INFO);
                     writer.AppendByte(0x01);
                     writer.AppendDword(0x1234);
-                    writer.AppendWord((ushort)DatabaseCore.Server.ServerIp[ServerIndex].Length);
-                    writer.AppendString(false, DatabaseCore.Server.ServerIp[ServerIndex]);
-                    writer.AppendWord(DatabaseCore.Server.ServerPort[ServerIndex]);
-                    ServerSocket.Send(writer.getWorkspace(), ClientIndex);
 
-//                    DatabaseCore.Server.CurUser[ServerIndex]++;
-//                    DatabaseCore.WriteQuery("UPDATE server SET users_current = '{0}' WHERE name = '{1}'", DatabaseCore.Server.CurUser[ServerIndex], DatabaseCore.Server.ServerName[ServerIndex]);
+                    ushort leng_ip = (ushort)DatabaseCore.Server.ServerIp[ServerIndex].Length;
+                    string str_ip = DatabaseCore.Server.ServerIp[ServerIndex];
+                    ushort port = DatabaseCore.Server.ServerPort[ServerIndex];
+
+                    writer.AppendWord(leng_ip);
+                    writer.AppendString(false, str_ip);
+                    writer.AppendWord(port);
+                    ServerSocket.Send(writer.getWorkspace(), ClientIndex);
+                    Console.WriteLine("Lengip:{0} - Ip:{1} - Port:{2}",leng_ip,str_ip,port);
+
+                    //DatabaseCore.Server.CurUser[ServerIndex]++;
+                    //DatabaseCore.WriteQuery("UPDATE server SET users_current = '{0}' WHERE name = '{1}'", DatabaseCore.Server.CurUser[ServerIndex], DatabaseCore.Server.ServerName[ServerIndex]);
                 }
             }
         }

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Packets
+END
+Packet_Login.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Packets/Packet_Login.cs
+END
+Packet_News.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Packets/Packet_News.cs
+END
+Opcode_List.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Packets/Opcode_List.cs
+END
+Packet_Load.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Packets/Packet_Load.cs
+END
+Packet_Patch.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Packets/Packet_Patch.cs
+END
+Packet_Gateway.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Packets/Packet_Gateway.cs
+END
+Packet_Serverlist.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/srevolution/!svn/ver/126/trunk/LoginServer/Packets/Packet_Serverlist.cs
+END
