@@ -24,7 +24,7 @@ namespace DarkEmu_GameServer
             tw.Write(sw.GetStringBuilder());
             tw.WriteLine();
         }
-        public static TextWriter tw = new StreamWriter("Debug" + d.Day.ToString() + d.Month.ToString() + ".txt");
+        public static TextWriter tw = new StreamWriter("Debug_GameServer_" + d.Day.ToString() + d.Month.ToString() + ".txt");
         public static StringWriter DumpBuffer(byte[] buffer, int Length)
         {
             StringWriter tw = new StringWriter();
