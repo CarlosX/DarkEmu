@@ -35,12 +35,14 @@ namespace DarkEmu_GameServer
             if (debug)
                 Console.WriteLine("[ProcessData][{0:X}][{1} bytes][Index {2}]\n{3}\n", tmpPacket->opcode, tmpPacket->size, Index, BitConverter.ToString(buffer, 6, tmpPacket->size).Replace('-', ' '));
 
+            //Console.WriteLine("{0}", tmpPacket->opcode);
+
             switch (tmpPacket->opcode)
             {
                 case CLIENT_OPCODES.GAME_CLIENT_KEEP_ALIVE:
                 case CLIENT_OPCODES.GAME_CLIENT_ACCEPT_HANDSHAKE:
+                    Debugx.DumpBuffer(buffer, 1, tmpPacket->opcode, tmpPacket->size);
                     break;
-
                 case CLIENT_OPCODES.GAME_CLIENT_INFO:
                     Auth.SendServerInfo(Index);
                     break;
@@ -123,6 +125,10 @@ namespace DarkEmu_GameServer
 
                 case CLIENT_OPCODES.GAME_CLIENT_ITEM_USE:
                     Items.OnUseItem(reader, Index);
+                    break;
+
+                default:
+                    Console.WriteLine("Default Opcode:{0}", tmpPacket->opcode);
                     break;
             }
 

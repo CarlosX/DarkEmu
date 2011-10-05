@@ -665,5 +665,5 @@ CREATE TABLE `user` (
 -- Records 
 -- ----------------------------
 INSERT INTO `news` VALUES ('5', 'C# Emulator ', 'Open Source Silkroad Emulator', '24', '10');
-INSERT INTO `server` VALUES ('0', 'Remote', '0', '100', '0', '127.0.0.1', '15780');
+INSERT INTO `server` VALUES ('0', 'Remote', '0', '100', '1', '127.0.0.1', '15780');
 INSERT INTO `server` VALUES ('1', 'Main', '0', '1000', '1', '127.0.0.1', '15780');

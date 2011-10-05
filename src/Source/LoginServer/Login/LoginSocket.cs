@@ -49,7 +49,18 @@ namespace DarkEmu_LoginServer
                     SendServerList(ClientIndex);
                     break;
                 case CLIENT_OPCODES.LOGIN_CLIENT_AUTH:
+                    Debugx.DumpBuffer(buffer, 1, tmpPacket->opcode, tmpPacket->size);
                     SendLogin(buffer, ClientIndex);
+                    break;
+                case CLIENT_OPCODES.LOGIN_CLIENT_LAUNCHER_UNK1:
+                    SendLauncherUnk1(ClientIndex);
+                    break;
+                case CLIENT_OPCODES.LOGIN_CLIENT_AUTH_UNK1:
+                    SendServerUnk1(ClientIndex);
+                    break;
+                default:
+                    //Debugx.DumpBuffer(buffer, 1, tmpPacket->opcode, tmpPacket->size);
+                    Console.WriteLine("default Opcode: {0}", tmpPacket->opcode);
                     break;
             }
 
@@ -141,6 +152,41 @@ namespace DarkEmu_LoginServer
 
             }
             ServerSocket.Send(writer.getWorkspace(), ClientIndex);
+        }
+        private static void SendLauncherUnk1(int ClientIndex)
+        {
+            PacketWriter2 writer = new PacketWriter2(SERVER_OPCODES.LOGIN_SERVER_LAUNCHER_UNK1, 1026, true);
+            //01 01 04 02
+            writer.AddByte(0x01);
+            writer.AddByte(0x01);
+            writer.AddByte(0x04);
+            writer.AddByte(0x02);
+            ServerSocket.Send(writer.GetBytes(), ClientIndex);
+        }
+        private static void SendServerUnk1(int ClientIndex)
+        {
+            /*
+             43 00 L
+             07 A1 Opcode
+             00 00 Secu
+             
+             03 00 count
+             
+             11 00 
+             67 73 70 6B 72 31 2E 6A 6F 79 6D 61 78 2E 63 6F 6D BD string_ip
+             32 01 port
+             */
+            PacketWriter2 writer = new PacketWriter2(SERVER_OPCODES.LOGIN_SERVER_AUTH_UNK1);
+            writer.AddByte(0x01);
+            writer.AddByte(0x00);
+            string str_ip = "127.0.0.1";
+            writer.AddByte(0x09);
+            writer.AddByte(0x00);
+            writer.AddString(str_ip, str_ip.Length);
+            writer.AddByte(0x3D);
+            writer.AddByte(0xA4);
+            ServerSocket.Send(writer.GetBytes(), ClientIndex);
+
         }
         private static void SendServerList(int ClientIndex)
         {

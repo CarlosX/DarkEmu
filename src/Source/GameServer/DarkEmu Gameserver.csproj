@@ -87,6 +87,7 @@
     <Compile Include="Game\Objects\Unique.cs" />
     <Compile Include="General\Database.cs" />
     <Compile Include="General\DatabaseCore.cs" />
+    <Compile Include="General\Debug.cs" />
     <Compile Include="General\Opcodes.cs" />
     <Compile Include="General\PacketReader.cs" />
     <Compile Include="General\PacketWriter.cs" />
