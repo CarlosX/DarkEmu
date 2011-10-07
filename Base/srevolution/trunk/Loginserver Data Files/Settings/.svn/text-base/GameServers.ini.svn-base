@@ -1,8 +1,0 @@
-[SERVERS]
-1=Server.Local
-
-[Server.Local]
-ID=1234
-Name=Private Dev
-ip=127.0.0.1
-code=protect019

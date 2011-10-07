@@ -1,5 +1,0 @@
-Foldername = Version patch name
-Extension = .srx
-
-Content of .srx should be the files that you will patch
-So a listening of the files in the folder of the patch itself

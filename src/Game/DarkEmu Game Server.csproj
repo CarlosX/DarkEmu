@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07B92B73-201A-403E-B70A-5348E344133A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DarkEmu_GameServer</RootNamespace>
+    <AssemblyName>DarkEmu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\GameServer\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DarkEmu.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A8CF3AE09C330A87246B5408C64E477D9344562D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Srx Revo_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Framework.IPCServer.cs">
+      <Link>Framework\Framework.IPCServer.cs</Link>
+    </Compile>
+    <Compile Include="Filesystem\Load_Drops.cs" />
+    <Compile Include="Filesystem\Load_Items.cs" />
+    <Compile Include="Filesystem\Load_Objects.cs" />
+    <Compile Include="Filesystem\Load_Skills.cs" />
+    <Compile Include="Gamesystem\Actions\ActionSwitch.cs" />
+    <Compile Include="Gamesystem\Actions\NormalAttack.cs" />
+    <Compile Include="Gamesystem\Character\CharacterScreen.cs" />
+    <Compile Include="Gamesystem\Character\IngameSuccess.cs" />
+    <Compile Include="Gamesystem\Character\IngameLogin.cs" />
+    <Compile Include="Gamesystem\Character\Jobselection.cs" />
+    <Compile Include="Gamesystem\Character\Requests.cs" />
+    <Compile Include="Gamesystem\Character\Restore.cs" />
+    <Compile Include="Gamesystem\Character\Deletion.cs" />
+    <Compile Include="Gamesystem\Guild\GuildStorage.cs" />
+    <Compile Include="Gamesystem\Guild\GuildPermissions.cs" />
+    <Compile Include="Gamesystem\Guild\GuildPromotion.cs" />
+    <Compile Include="Gamesystem\Guild\GuildTransfer.cs" />
+    <Compile Include="Gamesystem\Guild\GuildPlayerTitle.cs" />
+    <Compile Include="Gamesystem\Guild\GuildMessages.cs" />
+    <Compile Include="Gamesystem\Guild\GuildPoints.cs" />
+    <Compile Include="Gamesystem\Guild\GuildDeletion.cs" />
+    <Compile Include="Gamesystem\PartyPackets\RequestPackets.cs" />
+    <Compile Include="Gamesystem\PartyPackets\JoinPackets.cs" />
+    <Compile Include="Gamesystem\Party\Definitions.cs" />
+    <Compile Include="Gamesystem\Party\Join.cs" />
+    <Compile Include="Gamesystem\Party\Deletion.cs" />
+    <Compile Include="Gamesystem\Party\Renaming.cs" />
+    <Compile Include="Gamesystem\Party\Enums.cs" />
+    <Compile Include="Gamesystem\Party\Creation.cs" />
+    <Compile Include="Gamesystem\Party\Listening.cs" />
+    <Compile Include="System\Sendinformation.cs" />
+    <Compile Include="System\Getinformation.cs" />
+    <Compile Include="System\Definitions\Bootlogo.cs" />
+    <Compile Include="System\Definitions\Gamedefinitions.cs" />
+    <Compile Include="_Todo\Base\Skill.cs" />
+    <Compile Include="_Todo\Character\CharacterUpdate.cs" />
+    <Compile Include="Gamesystem\Character\Listening.cs" />
+    <Compile Include="Gamesystem\Character\Creation.cs" />
+    <Compile Include="_Todo\Character\CharacterLogin.cs" />
+    <Compile Include="_Todo\Character\CharacterLoading.cs" />
+    <Compile Include="_Todo\Character\CharacterSaving.cs" />
+    <Compile Include="Configuration\LoginServerInfo.cs" />
+    <Compile Include="System\Definitions\IngameMessages.cs" />
+    <Compile Include="_Todo\Framework\Framework.Encoding.cs" />
+    <Compile Include="_Todo\Framework\Framework.CommandServer.cs" />
+    <Compile Include="Gamesystem\Character\Disconnect.cs" />
+    <Compile Include="Gamesystem\Guild\GuildInvite.cs" />
+    <Compile Include="Gamesystem\Guild\GuildCreation.cs" />
+    <Compile Include="Gamesystem\Guild\GuildWar.cs" />
+    <Compile Include="Gamesystem\Guild\GuildIcon.cs" />
+    <Compile Include="_Todo\Items\ItemActions.cs" />
+    <Compile Include="_Todo\Items\ItemSwitch.cs" />
+    <Compile Include="_Todo\Items\ItemMoving.cs" />
+    <Compile Include="_Todo\Items\ItemChecks.cs" />
+    <Compile Include="_Todo\Items\ItemAdding.cs" />
+    <Compile Include="_Todo\Packet\AttackpetPackets.cs" />
+    <Compile Include="_Todo\Packet\FriendsPackets.cs" />
+    <Compile Include="Boot.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="_Todo\Public\ChangeSkin.cs" />
+    <Compile Include="_Todo\Public\Icons.cs" />
+    <Compile Include="_Todo\Public\Union.cs" />
+    <Compile Include="_Todo\Public\Storage.cs" />
+    <Compile Include="_Todo\Quest\QuestSystem.cs" />
+    <Compile Include="System\Debugger.cs" />
+    <Compile Include="Filesystem\Load_Data.cs" />
+    <Compile Include="_Todo\Framework\Framework.aList.cs" />
+    <Compile Include="_Todo\Framework\Framework.Decode.cs" />
+    <Compile Include="_Todo\Framework\Framework.File.cs" />
+    <Compile Include="_Todo\Framework\Framework.INI.cs" />
+    <Compile Include="_Todo\Framework\Framework.MD5.cs" />
+    <Compile Include="_Todo\Framework\Framework.MSSQL.cs" />
+    <Compile Include="_Todo\Framework\Framework.Networking.cs" />
+    <Compile Include="_Todo\Framework\Framework.PacketReader.cs" />
+    <Compile Include="_Todo\Framework\Framework.PacketWriter.cs" />
+    <Compile Include="_Todo\Framework\Framework.Print.cs" />
+    <Compile Include="_Todo\Function\Formule.cs" />
+    <Compile Include="_Todo\Function\Items.cs" />
+    <Compile Include="_Todo\Global\BuyPack.cs" />
+    <Compile Include="_Todo\Global\ItemMall.cs" />
+    <Compile Include="_Todo\Global\DataClass.cs" />
+    <Compile Include="_Todo\Global\GlobalUnique.cs" />
+    <Compile Include="_Todo\Global\Objects.cs" />
+    <Compile Include="_Todo\Global\RandomID.cs" />
+    <Compile Include="_Todo\Global\Timer.cs" />
+    <Compile Include="System\Opcodes.cs" />
+    <Compile Include="_Todo\Packet\CharacterLoad.cs" />
+    <Compile Include="_Todo\Packet\AlchemyPackets.cs" />
+    <Compile Include="_Todo\Packet\UniquePackets.cs" />
+    <Compile Include="_Todo\Packet\TransportPackets.cs" />
+    <Compile Include="_Todo\Packet\SkillSystemPackets.cs" />
+    <Compile Include="Gamesystem\PartyPackets\PartyDataPackets.cs" />
+    <Compile Include="_Todo\Packet\SpawnPackets.cs" />
+    <Compile Include="_Todo\Packet\NpcPackets.cs" />
+    <Compile Include="_Todo\Packet\GrabpetPackets.cs" />
+    <Compile Include="_Todo\Packet\StoragePackets.cs" />
+    <Compile Include="_Todo\Packet\TeleportPackets.cs" />
+    <Compile Include="_Todo\Packet\ExchangePackets.cs" />
+    <Compile Include="_Todo\Packet\PlayerActionPackets.cs" />
+    <Compile Include="Gamesystem\GuildPackets\GuildSystemPackets.cs" />
+    <Compile Include="_Todo\Packet\StallSystemPackets.cs" />
+    <Compile Include="_Todo\Packet\RankListeningPackets.cs" />
+    <Compile Include="_Todo\Packet\JobSystemPackets.cs" />
+    <Compile Include="_Todo\Packet\LeaveGamePackets.cs" />
+    <Compile Include="_Todo\Packet\LoginPackets.cs" />
+    <Compile Include="_Todo\Packet\MessagePackets.cs" />
+    <Compile Include="_Todo\Packet\ItemActionPackets.cs" />
+    <Compile Include="_Todo\Packet\MovementPackets.cs" />
+    <Compile Include="_Todo\Private\Blues.cs" />
+    <Compile Include="_Todo\Private\Npcs.cs" />
+    <Compile Include="_Todo\Private\DropSystem.cs" />
+    <Compile Include="_Todo\Private\Mastery.cs" />
+    <Compile Include="_Todo\Private\Object.cs" />
+    <Compile Include="_Todo\Private\ObjectFunction.cs" />
+    <Compile Include="_Todo\Public\Alchemy.cs" />
+    <Compile Include="_Todo\Public\Berserk.cs" />
+    <Compile Include="Gamesystem\Messaging\Chat.cs" />
+    <Compile Include="_Todo\Public\AttackPet.cs" />
+    <Compile Include="_Todo\Public\Balloons.cs" />
+    <Compile Include="_Todo\Public\Friends.cs" />
+    <Compile Include="_Todo\Public\MonsterMasks.cs" />
+    <Compile Include="_Todo\Public\ForgottenWorld.cs" />
+    <Compile Include="_Todo\Public\WebMall.cs" />
+    <Compile Include="_Todo\Public\HpMpRegen.cs" />
+    <Compile Include="_Todo\Public\Pvpsystem.cs" />
+    <Compile Include="_Todo\Public\Playerinventory.cs" />
+    <Compile Include="_Todo\Public\Premium.cs" />
+    <Compile Include="_Todo\Public\Potions.cs" />
+    <Compile Include="_Todo\Public\Transport.cs" />
+    <Compile Include="_Todo\Public\MonsterScrolls.cs" />
+    <Compile Include="_Todo\Public\EventSystem.cs" />
+    <Compile Include="_Todo\Public\PkSystem.cs" />
+    <Compile Include="Gamesystem\Guild\GuildData.cs" />
+    <Compile Include="_Todo\Public\ObjectClose.cs" />
+    <Compile Include="_Todo\Public\Jobs.cs" />
+    <Compile Include="_Todo\Public\PlayerState.cs" />
+    <Compile Include="_Todo\Public\Picking.cs" />
+    <Compile Include="_Todo\Public\Teleporting.cs" />
+    <Compile Include="_Todo\Public\Ranks.cs" />
+    <Compile Include="_Todo\Public\Movement.cs" />
+    <Compile Include="Gamesystem\Messaging\PrivateMessages.cs" />
+    <Compile Include="_Todo\Public\Grabpet.cs" />
+    <Compile Include="_Todo\Public\Exchange.cs" />
+    <Compile Include="_Todo\Public\Effect.cs" />
+    <Compile Include="_Todo\Public\Commands.cs" />
+    <Compile Include="_Todo\Items\ItemUsage.cs" />
+    <Compile Include="Gamesystem\Actions\Skills.cs" />
+    <Compile Include="_Todo\Public\Spawn.cs" />
+    <Compile Include="_Todo\Public\Stall.cs" />
+    <Compile Include="System\OpcodesSwitch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="System\UpdateServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="Properties\app.manifest" />
+    <None Include="_Todo\Framework\Framework.Logging.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Gamesystem\AttackingPackets\" />
+    <Folder Include="Gamesystem\CharacterPackets\" />
+    <Folder Include="Gamesystem\QuestPackets\" />
+    <Folder Include="Gamesystem\Quest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DarkEmu.ico" />
+  </ItemGroup>
+</Project>
