@@ -49,10 +49,10 @@ namespace LoginServer
                 {
                     ini = new LoginServer.Systems.Ini(Environment.CurrentDirectory + @"\Settings\Settings.ini");
                     LSPort = Convert.ToInt32(ini.GetValue("Server", "port", 15779));
-                    LSIP = ini.GetValue("Server", "ip", "").ToString();
+                    LSIP = ini.GetValue("Server", "ip", "127.0.0.1").ToString();
                     IPCPort = Convert.ToInt32(ini.GetValue("IPC", "port", 15790));
-                    IPCIP = ini.GetValue("IPC", "ip", "").ToString();
-                    Systems.DownloadServer = ini.GetValue("Patch_Server", "ip", "");
+                    IPCIP = ini.GetValue("IPC", "ip", "127.0.0.1").ToString();
+                    Systems.DownloadServer = ini.GetValue("Patch_Server", "ip", "127.0.0.1");
                     Systems.DownloadPort = Convert.ToInt16(ini.GetValue("Patch_Server", "port", ""));
                     ini = null;
                     Console.WriteLine("{0}Has loaded your ip settings successfully", Product.Prefix);

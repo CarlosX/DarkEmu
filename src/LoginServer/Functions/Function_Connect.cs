@@ -62,7 +62,14 @@ namespace LoginServer
                         switch (lResult)
                         {
                             case 0:
-                                client.Send(ConnectSucces(SSI.ip, SSI.port, 1));
+                                if (SSI.lan_wan)
+                                {
+                                    client.Send(ConnectSucces(SSI.wan, SSI.port, 1));
+                                }
+                                else
+                                {
+                                    client.Send(ConnectSucces(SSI.ip, SSI.port, 1));
+                                }
                                 return;
                             case 1:
                                 if (WrongPassword < 3)

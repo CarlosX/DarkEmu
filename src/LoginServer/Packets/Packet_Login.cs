@@ -86,7 +86,6 @@ namespace LoginServer
             Writer.Create(SERVER.SERVER_AUTH);
             Writer.Byte(0x01);
             Writer.DWord(0x1234); // Session
-
             Writer.Text(ip);
             Writer.Word(port);
 

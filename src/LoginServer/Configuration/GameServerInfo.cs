@@ -23,10 +23,12 @@ namespace LoginServer
             public UInt16 maxSlots = 100;
             public UInt16 usedSlots = 0;
 
-            public string name = "test";
+            public string name = "DarkEmu";
             public string ip = "127.0.0.1";
+            public string wan = "127.0.0.1";
             public string extip = "1";
             public string code = "t";
+            public bool lan_wan = false;
 
             public byte status = 0;
 
@@ -69,11 +71,13 @@ namespace LoginServer
                             string sName = ini.GetValue("SERVERS", sectname, "");
                             Systems.SRX_Serverinfo SServerInfo = new Systems.SRX_Serverinfo();
                             SServerInfo.id = Convert.ToUInt16(ini.GetValue(sName, "id", 0));
-                            SServerInfo.ip = ini.GetValue(sName, "ip", "");
+                            SServerInfo.ip = ini.GetValue(sName, "ip", "127.0.0.1");
+                            SServerInfo.wan = ini.GetValue(sName, "wan", "127.0.0.1");
                             SServerInfo.name = ini.GetValue(sName, "name", sName);
                             SServerInfo.port = Convert.ToUInt16(ini.GetValue(sName, "port", defaultPort));
                             SServerInfo.ipcport = Convert.ToUInt16(ini.GetValue(sName, "ipcport", "15791"));
                             SServerInfo.code = ini.GetValue(sName, "code", "t");
+                            SServerInfo.lan_wan = ini.GetValue(sName, "lan_wan", "0") == "1" ? true : false;
                             SServerInfo.Version = Convert.ToInt32(ini.GetValue(sName, "version", 0));
                             if (SServerInfo.ip == "" || SServerInfo.port == 0 || SServerInfo.id == 0 || SServerInfo.ipcport == 0 || GSList.ContainsKey(SServerInfo.id))
                             {
