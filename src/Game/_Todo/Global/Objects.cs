@@ -1247,9 +1247,9 @@ namespace DarkEmu_GameServer
                     this.x = reX;
                     this.y = reY;
                     Send(Packet.Movement(new DarkEmu_GameServer.Global.vektor(this.UniqueID,
-                                                    (float)Formule.packetx((float)this.x, this.xSec),
-                                                    (float)z,
-                                                    (float)Formule.packety((float)this.y, this.ySec),
+                                                    Formule.packetx(CovertDoubleFloat(this.x), this.xSec),
+                                                    CovertDoubleFloat(z),
+                                                    Formule.packety(CovertDoubleFloat(this.y), this.ySec),
                                                     this.xSec,
                                                     this.ySec)));
 
@@ -1258,7 +1258,7 @@ namespace DarkEmu_GameServer
             }
             catch (Exception ex)
             {
-                //Console.WriteLine("Run callback: ");
+                Console.WriteLine("Run callback: Error Movement");
                 Systems.Debugger.Write(ex);
             }
         }
@@ -1554,6 +1554,31 @@ namespace DarkEmu_GameServer
         public void Dispose()
         {
             GC.Collect(GC.GetGeneration(this));
+        }
+
+        public float CovertDoubleFloat(double doubleVal)
+        {
+            float floatVal = 0;
+
+            // Double to float conversion can overflow.
+            try
+            {
+                floatVal = System.Convert.ToSingle(doubleVal);
+                /*System.Console.WriteLine("{0} as a float is {1}",
+                    doubleVal, floatVal);*/
+                return floatVal;
+            }
+            catch (System.OverflowException)
+            {
+                System.Console.WriteLine(
+                    "Overflow in double-to-float conversion.");
+                floatVal = 0;
+            }
+
+            // Conversion from float to double cannot overflow.
+            //doubleVal = System.Convert.ToDouble(floatVal);
+            
+            return floatVal;
         }
     }
     #endregion
@@ -1902,6 +1927,7 @@ namespace DarkEmu_GameServer
             GC.Collect(GC.GetGeneration(this));
         }
     }
+
 }
 
 

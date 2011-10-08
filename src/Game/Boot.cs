@@ -148,9 +148,9 @@ namespace GameServer
             //Update serverlist info
             DarkEmu_GameServer.Systems.clients.update += new EventHandler(Users.updateServerList);
             //Load random unique monsters.
-            Random rand = new Random();
+            /*Random rand = new Random();*/
 
-            
+            /*
             DarkEmu_GameServer.GlobalUnique.StartTGUnique(rand.Next(10, 20) * 60000, 600);   //Random spawn tiger girl
             DarkEmu_GameServer.GlobalUnique.StartUriUnique(rand.Next(10, 20) * 60000, 600);   //Random spawn urichi
             DarkEmu_GameServer.GlobalUnique.StartIsyUnique(rand.Next(10, 20) * 60000, 600);   //Random spawn isy
@@ -163,7 +163,7 @@ namespace GameServer
             DarkEmu_GameServer.GlobalUnique.StartIsis(rand.Next(10, 20) * 90000, 600);   //Random spawn isis
             //Game.GlobalUnique.StartRoc          (rand.Next(10, 20) * 90000, 600);   //Random spawn roc
             DarkEmu_GameServer.GlobalUnique.StartIvyUnique(rand.Next(10, 20) * 60000, 600);   //Random spawn captain ivy
-            
+            */
 
             // start listening servers
             cmd.Start("127.0.0.1", iPortCmd);

@@ -85,26 +85,22 @@ namespace Framework
         }
         public void Word(object data)
         {
-            if (Convert.ToInt32(data) < 0)
+            if (Int16.MinValue <= Convert.ToInt32(data) && Convert.ToInt32(data) <= Int16.MaxValue)
             {
                 bw.Write(Convert.ToInt16(data));
-            
             }
             else
             {
-                bw.Write(Convert.ToUInt16(data));
-            
+                bw.Write(Convert.ToInt32(data));
             }
         }
         public void Word(short data)
         {
             bw.Write(data);
-         
         }
         public void DWord(uint data)
         {
             bw.Write(data);
-            
         }
         public void DWord(object data)
         {

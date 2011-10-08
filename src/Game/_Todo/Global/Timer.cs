@@ -439,7 +439,7 @@ namespace DarkEmu_GameServer
                                 if (Character.Action.nAttack) 
                                     ActionAttack();
 
-                                if (Timer.SpawnWatch.ElapsedMilliseconds >= 10)
+                                if (Timer.SpawnWatch.ElapsedMilliseconds >= 150)
                                 {
                                     this.ObjectSpawnCheck();
                                     Timer.SpawnWatch.Restart();
