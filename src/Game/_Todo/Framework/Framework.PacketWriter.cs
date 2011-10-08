@@ -17,7 +17,7 @@ namespace Framework
 
         MemoryStream ms = new MemoryStream();
         BinaryWriter bw;
-        
+
         public PacketWriter()
         {
 
@@ -59,12 +59,12 @@ namespace Framework
         public void Byte(byte data)
         {
             bw.Write(data);
-            
+
         }
         public void Byte(object data)
         {
             bw.Write(Convert.ToByte(data));
-            
+
         }
         public void Create(ushort opcode)
         {
@@ -81,17 +81,22 @@ namespace Framework
         public void Word(ushort data)
         {
             bw.Write(data);
-          
+
         }
         public void Word(object data)
         {
-            if (Int16.MinValue <= Convert.ToInt32(data) && Convert.ToInt32(data) <= Int16.MaxValue)
+            try
             {
-                bw.Write(Convert.ToInt16(data));
-            }
-            else
+                if (Convert.ToInt32(data) < 0)
+                {
+                    bw.Write(Convert.ToInt16(data));
+                }
+                else
+                {
+                    bw.Write(Convert.ToUInt16(data));
+                }
+            }catch(Exception ep)
             {
-                bw.Write(Convert.ToInt32(data));
             }
         }
         public void Word(short data)
@@ -107,48 +112,48 @@ namespace Framework
             if (Convert.ToInt64(data) > 0)
             {
                 bw.Write(Convert.ToUInt32(data));
-            
+
             }
             else
             {
                 bw.Write(Convert.ToInt32(data));
-            
+
             }
         }
         public void DWord(int data)
         {
             bw.Write(data);
-            
+
         }
         public void LWord(ulong data)
         {
             bw.Write(data);
-         
+
         }
         public void LWord(object data)
         {
             bw.Write(Convert.ToInt64(data));
-          
+
         }
         public void LWord(long data)
         {
             bw.Write(data);
-        
+
         }
         public void Float(float data)
         {
             bw.Write(data);
-     
+
         }
         public void Float(object data)
         {
             bw.Write(Convert.ToSingle(data));
-     
+
         }
         public void FloatFour(float data)
         {
             bw.Write(data);
-     
+
         }
         public void Text3(string data)
         {
@@ -164,12 +169,12 @@ namespace Framework
         public void Bool(bool b)
         {
             bw.Write(b);
-     
+
         }
         public void Bool(object b)
         {
             bw.Write((bool)b);
-       
+
         }
         public void Buffer(byte[] b)
         {
