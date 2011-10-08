@@ -19,7 +19,7 @@ namespace DarkEmu_GameServer
             try
             {
                 if (this.Character.deSpawning) return;
-                int spawnrange = 150;
+                int spawnrange = 80;
                 lock (this)
                 {
                     //Make sure character info is not null or not spawning yet allready.
