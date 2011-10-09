@@ -54,7 +54,6 @@ namespace DarkEmu_GameServer
                 //Link count byte
                 byte linkCount = Reader.Byte();
                 //Create switch to switch on type of chat (normal party etc).
-                Console.WriteLine("typo: {0}",chatType);
                 switch (chatType)
                 {
                     //--------------------------------- [Normal chat] ---------------------------------//
