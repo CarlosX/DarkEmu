@@ -109,14 +109,14 @@ namespace Framework
         }
         public void DWord(object data)
         {
-            if (Convert.ToInt64(data) > 0)
+            if ((Int64)(data) > 0)
             {
-                bw.Write(Convert.ToUInt32(data));
+                bw.Write((UInt32)(data));
 
             }
             else
             {
-                bw.Write(Convert.ToInt32(data));
+                bw.Write((Int32)(data));
 
             }
         }
@@ -132,7 +132,7 @@ namespace Framework
         }
         public void LWord(object data)
         {
-            bw.Write(Convert.ToInt64(data));
+            bw.Write((Int64)(data));
 
         }
         public void LWord(long data)
