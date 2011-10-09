@@ -81,21 +81,21 @@ namespace GameServer
                 //Read line below given value.
                 sqlConnect = ini.GetValue("Database", "connectionstring", @"Data Source=(local)\SQLEXPRESS;Initial Catalog=silkroad;Integrated Security=True;MultipleActiveResultSets=True;").ToString();
                 //Load our rates.
-                Systems.Rate.Gold = (byte)(ini.GetValue("Rates", "Goldrate", 1));
-                Systems.Rate.Item = (byte)(ini.GetValue("Rates", "Droprate", 1));
-                Systems.Rate.Xp = (byte)(ini.GetValue("Rates", "XPrate", 1));
-                Systems.Rate.Sp = (byte)(ini.GetValue("Rates", "SPrate", 1));
-                Systems.Rate.Sox = (byte)(ini.GetValue("Rates", "Sealrate", 1));
-                Systems.Rate.Elixir = (byte)(ini.GetValue("Rates", "Elixirsrate", 1));
-                Systems.Rate.Alchemyd = (byte)(ini.GetValue("Rates", "Alchemyrate", 1));
-                Systems.Rate.ETCd = (byte)(ini.GetValue("Rates", "ETCrate", 1));
-                Systems.Rate.Spawns = (byte)(ini.GetValue("Rates", "Spawnrate", 1));
-                iPortIPC = (UInt16)(ini.GetValue("IPC", "port", 15791));
+                Systems.Rate.Gold = Convert.ToByte(ini.GetValue("Rates", "Goldrate", 1));
+                Systems.Rate.Item = Convert.ToByte(ini.GetValue("Rates", "Droprate", 1));
+                Systems.Rate.Xp = Convert.ToByte(ini.GetValue("Rates", "XPrate", 1));
+                Systems.Rate.Sp = Convert.ToByte(ini.GetValue("Rates", "SPrate", 1));
+                Systems.Rate.Sox = Convert.ToByte(ini.GetValue("Rates", "Sealrate", 1));
+                Systems.Rate.Elixir = Convert.ToByte(ini.GetValue("Rates", "Elixirsrate", 1));
+                Systems.Rate.Alchemyd = Convert.ToByte(ini.GetValue("Rates", "Alchemyrate", 1));
+                Systems.Rate.ETCd = Convert.ToByte(ini.GetValue("Rates", "ETCrate", 1));
+                Systems.Rate.Spawns = Convert.ToByte(ini.GetValue("Rates", "Spawnrate", 1));
+                iPortIPC = Convert.ToUInt16(ini.GetValue("IPC", "port", 15791));
                 sIpIPC = ini.GetValue("IPC", "ip", "127.0.0.1");
-                iPortServer = (UInt16)(ini.GetValue("Server", "port", 15780));
+                iPortServer = Convert.ToUInt16(ini.GetValue("Server", "port", 15780));
                 sIpServer = ini.GetValue("Server", "ip", "127.0.0.1");
-                iPortCmd = (UInt16)(ini.GetValue("CMD", "port", 10101));
-                DarkEmu_GameServer.Systems.maxSlots = (Int32)(ini.GetValue("Server", "MaxSlots", 100));
+                iPortCmd = Convert.ToUInt16(ini.GetValue("CMD", "port", 10101));
+                DarkEmu_GameServer.Systems.maxSlots = Convert.ToInt32(ini.GetValue("Server", "MaxSlots", 100));
             }
             else
             {
@@ -393,7 +393,7 @@ namespace GameServer
                         byte waitTime = 5;
                         if (command.Length > 1)
                         {
-                            waitTime = System.(byte)(command[1]);
+                            waitTime = System.Convert.ToByte(command[1]);
                         }
                         if (aSocket != null)
                         {

@@ -227,7 +227,7 @@ namespace DarkEmu_GameServer
                     }
                         MsSQL.InsertData("UPDATE char_items SET plusvalue='0' WHERE slot ='" + this.Character.Alchemy.ItemList[0].Slot + "' AND owner='" + this.Character.Information.CharacterID + "'");
                 }
-                this.client.Send(Packet.AlchemyResponse(success, this.Character.Alchemy.ItemList[0], 1, (byte)(Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].totalblue)));
+                this.client.Send(Packet.AlchemyResponse(success, this.Character.Alchemy.ItemList[0], 1, Convert.ToByte(Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].totalblue)));
                 //delete elixir
                 MsSQL.InsertData("DELETE FROM char_items WHERE slot='" + this.Character.Alchemy.ItemList[1].Slot + "' AND owner='" + this.Character.Information.CharacterID + "'");
                 this.client.Send(Packet.MoveItem(0x0F, this.Character.Alchemy.ItemList[1].Slot, 0, 0, 0, "DELETE_ITEM"));
@@ -335,11 +335,11 @@ namespace DarkEmu_GameServer
                 LoadBluesid(this.Character.Alchemy.ItemList[0].dbID);
                 if (Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue.Contains("MATTR_DUR"))
                 {
-                    this.Character.Alchemy.ItemList[0].Durability += this.Character.Alchemy.ItemList[0].Durability * ((Int32)(Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue[Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue.IndexOf("MATTR_DUR")]) / 100);
+                    this.Character.Alchemy.ItemList[0].Durability += this.Character.Alchemy.ItemList[0].Durability * (Convert.ToInt32(Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue[Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue.IndexOf("MATTR_DUR")]) / 100);
                 }
                 if (Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue.Contains("MATTR_REINFORCE_ITEM"))
                 {
-                    this.Character.Alchemy.ItemList[0].PlusValue += (byte)(Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue[Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue.IndexOf("MATTR_REINFORCE_ITEM")]);
+                    this.Character.Alchemy.ItemList[0].PlusValue += Convert.ToByte(Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue[Data.ItemBlue[this.Character.Alchemy.ItemList[0].dbID].blue.IndexOf("MATTR_REINFORCE_ITEM")]);
                 }
                 MsSQL.InsertData("UPDATE char_items SET durability='" + this.Character.Alchemy.ItemList[0].Durability + "',plusvalue='" + this.Character.Alchemy.ItemList[0].PlusValue + "' WHERE id='" + this.Character.Alchemy.ItemList[0].dbID + "'");
                 this.client.Send(Packet.AlchemyStoneResponse(success, this.Character.Alchemy.ItemList[0]));

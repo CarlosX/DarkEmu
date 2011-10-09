@@ -479,7 +479,7 @@ namespace DarkEmu_GameServer
                         int Ownerid             = reader.GetInt32(9);
 
                         string Charname = Systems.MsSQL.GetData("SELECT name FROM character WHERE id='" + Ownerid + "'", "name").ToString();
-                        int Charmodel   = (Int32)(Systems.MsSQL.GetData("SELECT chartype FROM character WHERE id='" + Ownerid + "'", "chartype"));
+                        int Charmodel   = Convert.ToInt32(Systems.MsSQL.GetData("SELECT chartype FROM character WHERE id='" + Ownerid + "'", "chartype"));
                         
                         Writer.DWord(guild);                        //Guild ID
                         Writer.Text(reader.GetString(1));           //Guildname

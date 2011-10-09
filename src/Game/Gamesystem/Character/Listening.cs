@@ -75,7 +75,7 @@ namespace DarkEmu_GameServer
                 }
                 //Jobtype information
                 int jobinfo = Systems.MsSQL.GetDataInt("SELECT * FROM users WHERE id='" + p.AccountName + "'", "jobtype");
-                Writer.Byte((byte)(jobinfo));
+                Writer.Byte(Convert.ToByte(jobinfo));
             }
             ms.Close();
             //Return all bytes to the client

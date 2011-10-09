@@ -70,14 +70,14 @@ namespace DarkEmu_GameServer
             //Wrap our function inside a catcher
             try
             {
-                MsSQL.UpdateData("update character set min_phyatk='" + (Int32)(Math.Round(Character.Stat.MinPhyAttack)) +
-                    "', max_phyatk='" + (Int32)(Math.Round(Character.Stat.MaxPhyAttack)) +
-                    "', min_magatk='" + (Int32)(Math.Round(Character.Stat.MinMagAttack)) +
-                    "', max_magatk='" + (Int32)(Math.Round(Character.Stat.MaxMagAttack)) +
-                    "', phydef='" + (Int32)(Math.Round(Character.Stat.PhyDef - Character.Stat.uPhyDef)) +
-                    "', magdef='" + (Int32)(Math.Round(Character.Stat.MagDef - Character.Stat.uMagDef)) +
-                    "', hit='" + (Int16)(Math.Round(Character.Stat.Hit)) +
-                    "', parry='" + (Int16)(Math.Round(Character.Stat.Parry)) +
+                MsSQL.UpdateData("update character set min_phyatk='" + Convert.ToInt32(Math.Round(Character.Stat.MinPhyAttack)) +
+                    "', max_phyatk='" + Convert.ToInt32(Math.Round(Character.Stat.MaxPhyAttack)) +
+                    "', min_magatk='" + Convert.ToInt32(Math.Round(Character.Stat.MinMagAttack)) +
+                    "', max_magatk='" + Convert.ToInt32(Math.Round(Character.Stat.MaxMagAttack)) +
+                    "', phydef='" + Convert.ToInt32(Math.Round(Character.Stat.PhyDef - Character.Stat.uPhyDef)) +
+                    "', magdef='" + Convert.ToInt32(Math.Round(Character.Stat.MagDef - Character.Stat.uMagDef)) +
+                    "', hit='" + Convert.ToInt16(Math.Round(Character.Stat.Hit)) +
+                    "', parry='" + Convert.ToInt16(Math.Round(Character.Stat.Parry)) +
                     "', hp='" + Character.Stat.Hp +
                     "', mp='" + Character.Stat.Mp +
                     "', s_hp='" + Character.Stat.SecondHp +
@@ -85,7 +85,7 @@ namespace DarkEmu_GameServer
                     "', attribute='" + Character.Information.Attributes +
                     "', strength='" + Character.Stat.Strength +
                     "', intelligence='" + Character.Stat.Intelligence +
-                    "', experience='" + (Int64)(Character.Information.XP) +
+                    "', experience='" + Convert.ToInt64(Character.Information.XP) +
                     "', spbar='" + Character.Information.SpBar +
                     "', sp='" + Character.Information.SkillPoint +
                     "', level='" + Character.Information.Level +

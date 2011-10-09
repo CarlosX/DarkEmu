@@ -63,7 +63,7 @@ namespace Framework
         }
         public void Byte(object data)
         {
-            bw.Write((byte)(data));
+            bw.Write(Convert.ToByte(data));
 
         }
         public void Create(ushort opcode)
@@ -87,13 +87,13 @@ namespace Framework
         {
             try
             {
-                if ((Int32)(data) < 0)
+                if (Convert.ToInt32(data) < 0)
                 {
-                    bw.Write((Int16)(data));
+                    bw.Write(Convert.ToInt16(data));
                 }
                 else
                 {
-                    bw.Write((UInt16)(data));
+                    bw.Write(Convert.ToUInt16(data));
                 }
             }catch(Exception ep)
             {
@@ -109,14 +109,14 @@ namespace Framework
         }
         public void DWord(object data)
         {
-            if ((Int64)(data) > 0)
+            if (Convert.ToInt64(data) > 0)
             {
-                bw.Write((UInt32)(data));
+                bw.Write(Convert.ToUInt32(data));
 
             }
             else
             {
-                bw.Write((Int32)(data));
+                bw.Write(Convert.ToInt32(data));
 
             }
         }
@@ -132,7 +132,7 @@ namespace Framework
         }
         public void LWord(object data)
         {
-            bw.Write((Int64)(data));
+            bw.Write(Convert.ToInt64(data));
 
         }
         public void LWord(long data)
@@ -147,7 +147,7 @@ namespace Framework
         }
         public void Float(object data)
         {
-            bw.Write((float)(data));
+            bw.Write(Convert.ToSingle(data));
 
         }
         public void FloatFour(float data)
@@ -163,7 +163,7 @@ namespace Framework
 
         public void Text(object data)
         {
-            Word((short)((string)(data)).Length);
+            Word((short)Convert.ToString(data).Length);
             String((string)data);
         }
         public void Bool(bool b)
@@ -255,7 +255,7 @@ namespace Framework
             int[] sort = new int[8];
             for (int i = 0; i < 8; i++)
             {
-                if ((check & (Int32)((Math.Pow(2, i)))) != 0)
+                if ((check & Convert.ToInt32((Math.Pow(2, i)))) != 0)
                 {
                     sort[7 - i] = 1;
                 }

@@ -26,26 +26,26 @@ namespace DarkEmu_GameServer.File
                 #region General data
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                int ID = (Int32)(TxtFile.commands[1]);
+                int ID = Convert.ToInt32(TxtFile.commands[1]);
                 objectdata o = new objectdata();
                 o.ID = ID;
                 o.Name = TxtFile.commands[2];
-                o.Level = (byte)(TxtFile.commands[57]);
-                o.Exp = (Int32)(TxtFile.commands[79]);
-                o.HP = (Int32)(TxtFile.commands[59]);
-                o.Type = (byte)(TxtFile.commands[11]);
-                o.ObjectType = (byte)(TxtFile.commands[15]);
-                o.PhyDef = (Int32)(TxtFile.commands[71]);
-                o.MagDef = (Int32)(TxtFile.commands[72]);
-                o.HitRatio = (Int32)(TxtFile.commands[75]);
-                o.ParryRatio = (Int32)(TxtFile.commands[77]);
-                o.Agresif = (byte)(TxtFile.commands[93]);
+                o.Level = Convert.ToByte(TxtFile.commands[57]);
+                o.Exp = Convert.ToInt32(TxtFile.commands[79]);
+                o.HP = Convert.ToInt32(TxtFile.commands[59]);
+                o.Type = Convert.ToByte(TxtFile.commands[11]);
+                o.ObjectType = Convert.ToByte(TxtFile.commands[15]);
+                o.PhyDef = Convert.ToInt32(TxtFile.commands[71]);
+                o.MagDef = Convert.ToInt32(TxtFile.commands[72]);
+                o.HitRatio = Convert.ToInt32(TxtFile.commands[75]);
+                o.ParryRatio = Convert.ToInt32(TxtFile.commands[77]);
+                o.Agresif = Convert.ToByte(TxtFile.commands[93]);
                 o.Skill = new int[500];
-                o.Speed1 = (Int32)(TxtFile.commands[46]);
-                o.Speed2 = (Int32)(TxtFile.commands[47]);
-                o.SpeedWalk = (Int32)(TxtFile.commands[46]);
-                o.SpeedRun = (Int32)(TxtFile.commands[47]);
-                o.SpeedZerk = (Int32)(TxtFile.commands[48]);
+                o.Speed1 = Convert.ToInt32(TxtFile.commands[46]);
+                o.Speed2 = Convert.ToInt32(TxtFile.commands[47]);
+                o.SpeedWalk = Convert.ToInt32(TxtFile.commands[46]);
+                o.SpeedRun = Convert.ToInt32(TxtFile.commands[47]);
+                o.SpeedZerk = Convert.ToInt32(TxtFile.commands[48]);
                 #endregion
                 //Normal monsters
                 #region Normal monsters
@@ -117,10 +117,10 @@ namespace DarkEmu_GameServer.File
                 for (byte sk = 0; sk <= 8; sk++)
                 {
                     //Get information from line 83 if not null
-                    if ((Int32)(TxtFile.commands[83 + sk]) != 0 && Data.SkillBase[(Int32)(TxtFile.commands[83 + sk])].MagPer != 0)
+                    if (Convert.ToInt32(TxtFile.commands[83 + sk]) != 0 && Data.SkillBase[Convert.ToInt32(TxtFile.commands[83 + sk])].MagPer != 0)
                     {
                         //Read skill info
-                        o.Skill[o.amountSkill] = (Int32)(TxtFile.commands[83 + sk]);
+                        o.Skill[o.amountSkill] = Convert.ToInt32(TxtFile.commands[83 + sk]);
                         //Add amount skill to objects
                         o.amountSkill++;
                     }

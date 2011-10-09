@@ -100,14 +100,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -121,14 +121,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -142,9 +142,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Luck += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Luck -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_HP":
@@ -152,9 +152,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Hp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Hp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateHp();
@@ -166,9 +166,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Mp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Mp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateMp();
@@ -195,9 +195,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_Frostbite += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Frostbite += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_Frostbite -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Frostbite -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_RESIST_ESHOCK":
@@ -205,9 +205,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_Eshock += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Eshock += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_Eshock -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Eshock -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_RESIST_BURN":
@@ -215,9 +215,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_Burn += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Burn += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_Burn -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Burn -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_RESIST_POISON":
@@ -225,9 +225,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_Poison += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Poison += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_Poison -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Poison -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_RESIST_ZOMBIE":
@@ -235,9 +235,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_Zombie += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Zombie += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_Zombie -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Zombie -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_STR_3JOB":
@@ -246,14 +246,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -266,14 +266,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -286,14 +286,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -307,14 +307,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -328,14 +328,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -348,14 +348,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -436,9 +436,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Hp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Hp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateHp();
@@ -450,9 +450,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Mp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Mp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateMp();
@@ -494,13 +494,13 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        //ch.Character.Stat.phy_Absorb += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
-                                        //ch.Character.Stat.mag_Absorb += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        //ch.Character.Stat.phy_Absorb += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        //ch.Character.Stat.mag_Absorb += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     else
                                     {
-                                        //ch.Character.Stat.phy_Absorb -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
-                                        //ch.Character.Stat.mag_Absorb -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        //ch.Character.Stat.phy_Absorb -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        //ch.Character.Stat.mag_Absorb -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                 }
                                 break;
@@ -509,11 +509,11 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Blues.MonsterIgnorance += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.MonsterIgnorance += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     else
                                     {
-                                        ch.Character.Blues.MonsterIgnorance -= (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.MonsterIgnorance -= Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                 }
                                 break;
@@ -547,9 +547,9 @@ namespace DarkEmu_GameServer
                                 if (Data.ItemBlue[item.dbID].blue.Contains("MATTR_RESIST_STUN"))
                                 {
                                     if (add)
-                                        ch.Character.Blues.Resist_Stun += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Stun += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_Stun -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Stun -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_RESIST_CSMP":
@@ -557,9 +557,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_CSMP += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_CSMP += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_CSMP -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_CSMP -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_RESIST_DISEASE":
@@ -567,9 +567,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_Disease += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Disease += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_Disease -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Disease -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_RESIST_SLEEP":
@@ -577,9 +577,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_Sleep += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Sleep += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_Sleep -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Sleep -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_RESIST_FEAR":
@@ -587,9 +587,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_Fear += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Fear += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_Fear -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_Fear -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_NASRUN_UMDU": //damage increase(only @ uniques)
@@ -597,11 +597,11 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Blues.UniqueDMGInc += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.UniqueDMGInc += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     else
                                     {
-                                        ch.Character.Blues.UniqueDMGInc += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.UniqueDMGInc += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                 }
                                 break;
@@ -610,13 +610,13 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Hp += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
-                                        ch.Character.Stat.SecondHp += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.SecondHp += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Hp -= (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
-                                        ch.Character.Stat.SecondHp -= (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp -= Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.SecondHp -= Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     ch.UpdateHp();
                                     ch.SavePlayerInfo();
@@ -627,13 +627,13 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Mp += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
-                                        ch.Character.Stat.SecondMP += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.SecondMP += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Mp -= (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
-                                        ch.Character.Stat.SecondMP -= (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp -= Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.SecondMP -= Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     ch.UpdateMp();
                                     ch.SavePlayerInfo();
@@ -644,11 +644,11 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.BlockRatio += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.BlockRatio += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.BlockRatio -= (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.BlockRatio -= Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.SavePlayerInfo();
@@ -660,14 +660,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -681,14 +681,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -703,9 +703,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Hp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Hp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateHp();
@@ -718,9 +718,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Mp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Mp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateMp();
@@ -732,9 +732,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Luck += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Luck -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_AVATAR_STR_2":
@@ -743,14 +743,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -764,14 +764,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -784,14 +784,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -804,14 +804,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -824,14 +824,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -845,14 +845,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -865,11 +865,11 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Blues.MonsterIgnorance += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.MonsterIgnorance += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     else
                                     {
-                                        ch.Character.Blues.MonsterIgnorance -= (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.MonsterIgnorance -= Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                 }
                                 break;
@@ -878,11 +878,11 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Blues.MonsterIgnorance += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.MonsterIgnorance += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     else
                                     {
-                                        ch.Character.Blues.MonsterIgnorance -= (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.MonsterIgnorance -= Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                 }
                                 break;
@@ -891,11 +891,11 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Blues.MonsterIgnorance += (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.MonsterIgnorance += Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                     else
                                     {
-                                        ch.Character.Blues.MonsterIgnorance -= (Int32)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.MonsterIgnorance -= Convert.ToInt32(Data.ItemBlue[item.dbID].blueamount[k]);
                                     }
                                 }
                                 break;
@@ -904,9 +904,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Luck += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Luck -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_AVATAR_LUCK_2":
@@ -914,9 +914,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Luck += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Luck -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_AVATAR_LUCK_3":
@@ -924,9 +924,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Luck += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Luck -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_AVATAR_LUCK_4":
@@ -934,9 +934,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Luck += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Luck -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Luck -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_RESIST_ALL_SET":
@@ -944,9 +944,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Blues.Resist_All += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_All += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Blues.Resist_All -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Blues.Resist_All -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                 }
                                 break;
                             case "MATTR_TRADE_STR":
@@ -955,14 +955,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -976,14 +976,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -997,14 +997,14 @@ namespace DarkEmu_GameServer
 
                                     if (add)
                                     {
-                                        ch.Character.Stat.Strength += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Strength -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Strength -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateStrengthMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateHp();
@@ -1017,14 +1017,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -1037,14 +1037,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -1057,14 +1057,14 @@ namespace DarkEmu_GameServer
                                 {
                                     if (add)
                                     {
-                                        ch.Character.Stat.Intelligence += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceInfo(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
                                     }
                                     else
                                     {
-                                        ch.Character.Stat.Intelligence -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Intelligence -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                         ch.UpdateIntelligenceMinus(Convert.ToSByte(Data.ItemBlue[item.dbID].blueamount[k]));
                                         ch.SetStat();
                                         ch.UpdateMp();
@@ -1077,9 +1077,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Hp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Hp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateHp();
@@ -1091,9 +1091,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Hp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Hp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateHp();
@@ -1105,9 +1105,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Hp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Hp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Hp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateHp();
@@ -1119,9 +1119,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Mp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Mp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateMp();
@@ -1133,9 +1133,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Mp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Mp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateMp();
@@ -1147,9 +1147,9 @@ namespace DarkEmu_GameServer
                                 {
 
                                     if (add)
-                                        ch.Character.Stat.Mp += (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp += Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
                                     else
-                                        ch.Character.Stat.Mp -= (Int16)(Data.ItemBlue[item.dbID].blueamount[k]);
+                                        ch.Character.Stat.Mp -= Convert.ToInt16(Data.ItemBlue[item.dbID].blueamount[k]);
 
                                     ch.client.Send(Packet.PlayerStat(ch.Character));
                                     ch.UpdateMp();

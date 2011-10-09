@@ -71,11 +71,11 @@ namespace DarkEmu_GameServer
         }
         public static int gamePhp(byte level, short str)
         {
-            return (Int32)(Math.Pow(1.02, ((level) - 1)) * (str) * 10);
+            return Convert.ToInt32(Math.Pow(1.02, ((level) - 1)) * (str) * 10);
         }
         public static int gamePmp(byte level, short Int)
         {
-            return (Int32)(Math.Pow(1.02, ((level) - 1)) * (Int) * 10);
+            return Convert.ToInt32(Math.Pow(1.02, ((level) - 1)) * (Int) * 10);
         }
        
         public static double gamedistance(DarkEmu_GameServer.character._pos p1, DarkEmu_GameServer.character._pos p2)

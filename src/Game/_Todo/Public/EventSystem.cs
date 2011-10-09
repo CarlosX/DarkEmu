@@ -205,9 +205,9 @@ namespace DarkEmu_GameServer
         private obj getMob(int id, List<string> param)
         {
             short AREA = short.Parse(param[1]);
-            float x = (Int32)(param[2]);
-            float z = (Int32)(param[3]);
-            float y = (Int32)(param[4]);
+            float x = Convert.ToInt32(param[2]);
+            float z = Convert.ToInt32(param[3]);
+            float y = Convert.ToInt32(param[4]);
             obj o = new obj();
             o.AutoMovement = true;
             o.LocalType = Data.ObjectBase[id].Type;
@@ -217,8 +217,8 @@ namespace DarkEmu_GameServer
             o.Ids = new Global.ID(Global.ID.IDS.Object);
             o.UniqueID = o.Ids.GetUniqueID;
 
-            o.xSec = (byte)((AREA).ToString("X4").Substring(2, 2), 16);
-            o.ySec = (byte)((AREA).ToString("X4").Substring(0, 2), 16);
+            o.xSec = Convert.ToByte((AREA).ToString("X4").Substring(2, 2), 16);
+            o.ySec = Convert.ToByte((AREA).ToString("X4").Substring(0, 2), 16);
             o.x = (o.xSec - 135) * 192 + (x) / 10;
             o.z = z;
             o.y = (o.ySec - 92) * 192 + (y) / 10;

@@ -97,7 +97,7 @@ namespace DarkEmu_GameServer
                 }
                 //Jobtype information
                 int jobinfo = Systems.MsSQL.GetDataInt("SELECT * FROM users WHERE id='"+ name +"'", "jobtype");
-                Writer.Byte((byte)(jobinfo));
+                Writer.Byte(Convert.ToByte(jobinfo));
             }
             ms.Close();
 
@@ -212,7 +212,7 @@ namespace DarkEmu_GameServer
                     Systems.MsSQL.InsertData("UPDATE char_items SET quantity='" + amount + "' WHERE owner='" + c.Information.CharacterID + "' AND itemid='" + msreader.GetInt32(2) + "' AND id='" + msreader.GetInt32(0) + "' AND storagetype='0'");
 
                     if (msreader.GetByte(5) == 6)
-                        c.Information.Item.wID = (Int32)(msreader.GetInt32(2));
+                        c.Information.Item.wID = Convert.ToInt32(msreader.GetInt32(2));
                     if (msreader.GetByte(5) == 7)
                     {
                         c.Information.Item.sID = msreader.GetInt32(2);

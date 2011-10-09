@@ -85,9 +85,9 @@ namespace DarkEmu_GameServer
                             #region Gold
                             int Golddrop = rnd.Next(Data.LevelGold[Data.ObjectBase[ID].Level].min, Data.LevelGold[Data.ObjectBase[ID].Level].max);
                             Amountinfo = 0;
-                            if (this.Type == 4 && (rnd.Next(0, 200) < 200 * Systems.Rate.Gold)) Amountinfo = (byte)(rnd.Next(1, 3));
-                            if (this.Type == 3 && (rnd.Next(0, 200) < 200 * Systems.Rate.Gold)) Amountinfo = (byte)(rnd.Next(4, 6));
-                            if (this.Type == 1 && (rnd.Next(0, 200) < 200 * Systems.Rate.Gold)) Amountinfo = (byte)(rnd.Next(1, 3));
+                            if (this.Type == 4 && (rnd.Next(0, 200) < 200 * Systems.Rate.Gold)) Amountinfo = Convert.ToByte(rnd.Next(1, 3));
+                            if (this.Type == 3 && (rnd.Next(0, 200) < 200 * Systems.Rate.Gold)) Amountinfo = Convert.ToByte(rnd.Next(4, 6));
+                            if (this.Type == 1 && (rnd.Next(0, 200) < 200 * Systems.Rate.Gold)) Amountinfo = Convert.ToByte(rnd.Next(1, 3));
                             if (this.Type == 0 && (rnd.Next(0, 200) < 100 * Systems.Rate.Gold)) Amountinfo = 1;
 
                             for (byte a = 1; a <= Amountinfo; )

@@ -28,7 +28,7 @@ namespace DarkEmu_GameServer.Base
                 info.TargetType = new bool[10];
                 info.NumberOfAttack = NumberAttack(SkillID, ref info.SkillID);
                 info.Targethits = 1;
-                info.Distance = (byte)(Data.SkillBase[SkillID].Distance);
+                info.Distance = Convert.ToByte(Data.SkillBase[SkillID].Distance);
                 info.Tdistance = 0;
                 info.canUse = true;
                 //Switch on skills series

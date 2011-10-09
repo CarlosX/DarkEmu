@@ -83,10 +83,10 @@ namespace Framework
         public static bool IsHexDigit(Char c)
         {
             int numChar;
-            int numA = (Int32)('A');
-            int num1 = (Int32)('0');
+            int numA = Convert.ToInt32('A');
+            int num1 = Convert.ToInt32('0');
             c = Char.ToUpper(c);
-            numChar = (Int32)(c);
+            numChar = Convert.ToInt32(c);
             if (numChar >= numA && numChar < (numA + 6))
                 return true;
             if (numChar >= num1 && numChar < (num1 + 10))

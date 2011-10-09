@@ -36,7 +36,7 @@ namespace DarkEmu_GameServer
                     //Write static 1 byte
                     Writer.Byte(1);
                     //Write total messages count
-                    Writer.Byte((byte)(count));
+                    Writer.Byte(Convert.ToByte(count));
                     //Create new sql data reader for reading colums.
                     using (SqlDataReader reader = ms.Read())
                     {

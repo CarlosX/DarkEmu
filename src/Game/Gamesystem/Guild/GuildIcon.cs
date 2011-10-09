@@ -38,7 +38,7 @@ namespace DarkEmu_GameServer
             foreach (char c in asciiString)
             {
                 int tmp = c;
-                hex += String.Format("{0:x2}", (uint)System.(UInt32)(tmp.ToString()));
+                hex += String.Format("{0:x2}", (uint)System.Convert.ToUInt32(tmp.ToString()));
             }
             return hex;
         }

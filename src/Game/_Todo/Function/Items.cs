@@ -76,14 +76,14 @@ namespace DarkEmu_GameServer.Function
             int RandomNumber = Global.RandomID.GetRandom(0, 200);
             Random rnd = new Random();
             //TODO: Calculate random values on chance / ticket / rates / add more values
-            if (RandomNumber == 200) return (byte)(rnd.Next(80, 100));
-            else if (RandomNumber == 180) return (byte)(rnd.Next(70, 80));
-            else if (RandomNumber == 120) return (byte)(rnd.Next(60, 70));
-            else if (RandomNumber <= 110 && RandomNumber >= 105) return (byte)(rnd.Next(50,60));
-            else if (RandomNumber <= 100 && RandomNumber >= 62) return (byte)(rnd.Next(40, 50));
-            else if (RandomNumber <= 120 && RandomNumber >= 48) return (byte)(rnd.Next(20, 30));
-            else if (RandomNumber <= 150 && RandomNumber >= 30) return (byte)(rnd.Next(10, 20));
-            else if (RandomNumber <= 200 && RandomNumber >= 5) return (byte)(rnd.Next(1, 10));
+            if (RandomNumber == 200) return Convert.ToByte(rnd.Next(80, 100));
+            else if (RandomNumber == 180) return Convert.ToByte(rnd.Next(70, 80));
+            else if (RandomNumber == 120) return Convert.ToByte(rnd.Next(60, 70));
+            else if (RandomNumber <= 110 && RandomNumber >= 105) return Convert.ToByte(rnd.Next(50,60));
+            else if (RandomNumber <= 100 && RandomNumber >= 62) return Convert.ToByte(rnd.Next(40, 50));
+            else if (RandomNumber <= 120 && RandomNumber >= 48) return Convert.ToByte(rnd.Next(20, 30));
+            else if (RandomNumber <= 150 && RandomNumber >= 30) return Convert.ToByte(rnd.Next(10, 20));
+            else if (RandomNumber <= 200 && RandomNumber >= 5) return Convert.ToByte(rnd.Next(1, 10));
             return 0;
         }
     }

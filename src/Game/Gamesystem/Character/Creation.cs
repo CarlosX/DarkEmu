@@ -223,17 +223,17 @@ namespace DarkEmu_GameServer
                     string Amount9 = ini.GetValue("Chinese.Start", "Amount4", "").ToString();
                     string Amount10 = ini.GetValue("Chinese.Start", "Amount5", "").ToString();
                     //Add the custom items (European)
-                    AddItem((Int32)(Item1), (byte)(Amount1), 13, Player.CreatingCharID, 0);
-                    AddItem((Int32)(Item2), (byte)(Amount2), 14, Player.CreatingCharID, 0);
-                    AddItem((Int32)(Item3), (byte)(Amount3), 15, Player.CreatingCharID, 0);
-                    AddItem((Int32)(Item4), (byte)(Amount4), 16, Player.CreatingCharID, 0);
-                    AddItem((Int32)(Item5), (byte)(Amount5), 17, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item1), Convert.ToByte(Amount1), 13, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item2), Convert.ToByte(Amount2), 14, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item3), Convert.ToByte(Amount3), 15, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item4), Convert.ToByte(Amount4), 16, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item5), Convert.ToByte(Amount5), 17, Player.CreatingCharID, 0);
                     //Add the custom items (Chinese)
-                    AddItem((Int32)(Item6), (byte)(Amount1), 13, Player.CreatingCharID, 0);
-                    AddItem((Int32)(Item7), (byte)(Amount2), 14, Player.CreatingCharID, 0);
-                    AddItem((Int32)(Item8), (byte)(Amount3), 15, Player.CreatingCharID, 0);
-                    AddItem((Int32)(Item9), (byte)(Amount4), 16, Player.CreatingCharID, 0);
-                    AddItem((Int32)(Item10), (byte)(Amount5), 17, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item6), Convert.ToByte(Amount1), 13, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item7), Convert.ToByte(Amount2), 14, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item8), Convert.ToByte(Amount3), 15, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item9), Convert.ToByte(Amount4), 16, Player.CreatingCharID, 0);
+                    AddItem(Convert.ToInt32(Item10), Convert.ToByte(Amount5), 17, Player.CreatingCharID, 0);
                 }
                 catch (Exception) { }
 

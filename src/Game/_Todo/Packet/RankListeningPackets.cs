@@ -26,7 +26,7 @@ namespace DarkEmu_GameServer
             Writer.Byte(1);
             Writer.Byte(1);
             Writer.Byte(0);
-            Writer.Byte((byte)(countinfo));
+            Writer.Byte(Convert.ToByte(countinfo));
 
             using (SqlDataReader reader = ms.Read())
             {
@@ -63,7 +63,7 @@ namespace DarkEmu_GameServer
             Writer.Byte(1);
             Writer.Byte(1);
             Writer.Byte(0);
-            Writer.Byte((byte)(countinfo));
+            Writer.Byte(Convert.ToByte(countinfo));
 
             using (SqlDataReader reader = ms.Read())
             {
@@ -100,7 +100,7 @@ namespace DarkEmu_GameServer
             Writer.Byte(1);
             Writer.Byte(1);
             Writer.Byte(0);
-            Writer.Byte((byte)(countinfo));
+            Writer.Byte(Convert.ToByte(countinfo));
 
             using (SqlDataReader reader = ms.Read())
             {
@@ -137,7 +137,7 @@ namespace DarkEmu_GameServer
             Writer.Byte(1);
             Writer.Byte(1);
             Writer.Byte(1);
-            Writer.Byte((byte)(countinfo));
+            Writer.Byte(Convert.ToByte(countinfo));
 
             using (SqlDataReader reader = ms.Read())
             {
@@ -172,7 +172,7 @@ namespace DarkEmu_GameServer
             Writer.Byte(1);
             Writer.Byte(2);
             Writer.Byte(1);
-            Writer.Byte((byte)(countinfo));
+            Writer.Byte(Convert.ToByte(countinfo));
 
             using (SqlDataReader reader = ms.Read())
             {
@@ -207,7 +207,7 @@ namespace DarkEmu_GameServer
             Writer.Byte(1);
             Writer.Byte(3);
             Writer.Byte(1);
-            Writer.Byte((byte)(countinfo));
+            Writer.Byte(Convert.ToByte(countinfo));
 
             using (SqlDataReader reader = ms.Read())
             {
@@ -240,7 +240,7 @@ namespace DarkEmu_GameServer
             Writer.Create(Systems.SERVER_HONOR_RANK);
             Writer.Byte(1);
             int i = 0;
-            Writer.Byte((byte)(countinfo));
+            Writer.Byte(Convert.ToByte(countinfo));
             using (SqlDataReader reader = ms.Read())
             {
                 while (reader.Read())
