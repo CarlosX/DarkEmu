@@ -6,6 +6,7 @@ using System;
 using Framework;
 using System.Text;
 using System.Collections.Generic;
+using DarkEmu_GameServer.Global;
 
 namespace DarkEmu_GameServer
 {
@@ -325,16 +326,24 @@ namespace DarkEmu_GameServer
             string proc = text.Replace(".", "");
             try
             {
-                //proc = makeitem 122 12
+                //proc = makeitem name 12
                 string[] comando = proc.Split(' ');
 
                 // comando[0] = makeitem <- comando
-                // comando[1] = 122     <- id_item
-
+                // comando[1] = name     <- id_item
+                // comando[2] = plus     <- plus
                 switch (comando[0])
                 {
                     case "makeitem":
-
+                        if (comando[1] != "")
+                        {
+                            int id = item_database.GetItem(comando[1]);
+                            if (id > 0)
+                            {
+                                int plus = comando[2] == "" ? 1 : int.Parse(comando[2]);
+                                GM_MAKEITEM(id, plus);
+                            }
+                        }
                         break;
                     default:
                         Console.WriteLine("Command: {0} No exist",comando[0]);

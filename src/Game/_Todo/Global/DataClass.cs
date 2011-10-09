@@ -13,14 +13,14 @@ namespace DarkEmu_GameServer.Global
 {
     public static class Versions
     {
-        public static string appVersion = "0.0.1";
+        public static string appVersion = "1.0.1";
         public static int clientVersion = 322;
     }
     public static class Product
     {
-        public static string Productname = "SRXTREME";
+        public static string Productname = "DARKEMU";
         public static string Homepage = "http://www.xfsgames.com.ar";
-        public static string Prefix = "[SRX]: ";
+        public static string Prefix = "[DARKEMU]: ";
     }
     public sealed class trader_data
     {
