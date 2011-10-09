@@ -91,13 +91,13 @@ namespace DarkEmu_GameServer.File
             string s = null;
             int count = TxtFile.amountLine;
             uint index = 0;
-            int npcamount = Convert.ToInt16(Spawninfo);
+            int npcamount = (Int16)(Spawninfo);
             int countme = 0;
             for (int l = 0; l <= TxtFile.amountLine - 1; l++)
             {
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                int ID = Convert.ToInt32(TxtFile.commands[0]);
+                int ID = (Int32)(TxtFile.commands[0]);
                 string namecheck = Data.ObjectBase[ID].Name;
 
                 if (namecheck.Contains("MOB_"))
@@ -114,9 +114,9 @@ namespace DarkEmu_GameServer.File
                         obj o = new obj();
                         index++;
                         short AREA = short.Parse(TxtFile.commands[1]);
-                        float x = Convert.ToInt32(TxtFile.commands[2]);
-                        float z = Convert.ToInt32(TxtFile.commands[3]);
-                        float y = Convert.ToInt32(TxtFile.commands[4]);
+                        float x = (Int32)(TxtFile.commands[2]);
+                        float z = (Int32)(TxtFile.commands[3]);
+                        float y = (Int32)(TxtFile.commands[4]);
 
                         //:S localtype not needed just set state speed information
                         if (ID == 1979 || ID == 2101 || ID == 2124 || ID == 2111 || ID == 2112)
@@ -137,8 +137,8 @@ namespace DarkEmu_GameServer.File
                         o.Ids = new Global.ID(Global.ID.IDS.Object);
                         o.UniqueID = o.Ids.GetUniqueID;
 
-                        o.xSec = Convert.ToByte((AREA).ToString("X4").Substring(2, 2), 16);
-                        o.ySec = Convert.ToByte((AREA).ToString("X4").Substring(0, 2), 16);
+                        o.xSec = (byte)((AREA).ToString("X4").Substring(2, 2), 16);
+                        o.ySec = (byte)((AREA).ToString("X4").Substring(0, 2), 16);
                         o.x = (o.xSec - 135) * 192 + (x) / 10;
                         o.z = z;
                         o.y = (o.ySec - 92) * 192 + (y) / 10;
@@ -204,7 +204,7 @@ namespace DarkEmu_GameServer.File
             {
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                int ID = Convert.ToInt32(TxtFile.commands[0]);
+                int ID = (Int32)(TxtFile.commands[0]);
                 byte race = Data.ObjectBase[ID].Type;
                 string namecheck = Data.ObjectBase[ID].Name;
                 
@@ -227,8 +227,8 @@ namespace DarkEmu_GameServer.File
                     o.Ids = new Global.ID(Global.ID.IDS.Object);
                     o.UniqueID = o.Ids.GetUniqueID;
                     o.area = AREA;
-                    o.xSec = Convert.ToByte((AREA).ToString("X4").Substring(2, 2), 16);
-                    o.ySec = Convert.ToByte((AREA).ToString("X4").Substring(0, 2), 16);
+                    o.xSec = (byte)((AREA).ToString("X4").Substring(2, 2), 16);
+                    o.ySec = (byte)((AREA).ToString("X4").Substring(0, 2), 16);
                     o.x = (o.xSec - 135) * 192 + (x) / 10;
                     o.z = z;
                     o.y = (o.ySec - 92) * 192 + (y) / 10;
@@ -291,7 +291,7 @@ namespace DarkEmu_GameServer.File
                 if (!(short.Parse(TxtFile.commands[41]) == 0))
                 {
                     obj o = new obj();
-                    int ID = Convert.ToInt32(TxtFile.commands[1]);
+                    int ID = (Int32)(TxtFile.commands[1]);
                     short AREA = short.Parse(TxtFile.commands[41]);
                     double x = Convert.ToDouble(TxtFile.commands[43]);
                     double z = Convert.ToDouble(TxtFile.commands[44]);
@@ -303,8 +303,8 @@ namespace DarkEmu_GameServer.File
                     Data.ObjectBase[ID] = os;
                     o.ID = ID;
                     o.area = AREA;
-                    o.xSec = Convert.ToByte((AREA).ToString("X4").Substring(2, 2), 16);
-                    o.ySec = Convert.ToByte((AREA).ToString("X4").Substring(0, 2), 16);
+                    o.xSec = (byte)((AREA).ToString("X4").Substring(2, 2), 16);
+                    o.ySec = (byte)((AREA).ToString("X4").Substring(0, 2), 16);
                     o.x = (o.xSec - 135) * 192 + (x) / 10;
                     o.z = z;
                     o.y = (o.ySec - 92) * 192 + (y) / 10;
@@ -332,19 +332,19 @@ namespace DarkEmu_GameServer.File
                 TxtFile.commands = s.Split('\t');
 
                 cavepoint o = new cavepoint();
-                int Number = Convert.ToInt32(TxtFile.commands[1]);
-                int ID = Convert.ToInt32(TxtFile.commands[3]);
+                int Number = (Int32)(TxtFile.commands[1]);
+                int ID = (Int32)(TxtFile.commands[3]);
                 short AREA = short.Parse(TxtFile.commands[5]);
                 double x = Convert.ToDouble(TxtFile.commands[6]);
                 double z = Convert.ToDouble(TxtFile.commands[7]);
                 double y = Convert.ToDouble(TxtFile.commands[8]);
 
-                o.test = Convert.ToByte(TxtFile.commands[12]);
+                o.test = (byte)(TxtFile.commands[12]);
                 o.Name = TxtFile.commands[2];
                 o.ID = ID;
                 o.Number = Number;
-                o.xSec = Convert.ToByte((AREA).ToString("X4").Substring(2, 2), 16);
-                o.ySec = Convert.ToByte((AREA).ToString("X4").Substring(0, 2), 16);
+                o.xSec = (byte)((AREA).ToString("X4").Substring(2, 2), 16);
+                o.ySec = (byte)((AREA).ToString("X4").Substring(0, 2), 16);
                 if (!(o.xSec < 8))
                 {
                     o.x = (o.xSec - 135) * 192 + (x) / 10;
@@ -377,19 +377,19 @@ namespace DarkEmu_GameServer.File
                 TxtFile.commands = s.Split('\t');
 
                 point o = new point();
-                int Number = Convert.ToInt32(TxtFile.commands[1]);
-                int ID = Convert.ToInt32(TxtFile.commands[3]);
+                int Number = (Int32)(TxtFile.commands[1]);
+                int ID = (Int32)(TxtFile.commands[3]);
                 short AREA = short.Parse(TxtFile.commands[5]);
                 double x = Convert.ToDouble(TxtFile.commands[6]);
                 double z = Convert.ToDouble(TxtFile.commands[7]);
                 double y = Convert.ToDouble(TxtFile.commands[8]);
 
-                o.test = Convert.ToByte(TxtFile.commands[12]);
+                o.test = (byte)(TxtFile.commands[12]);
                 o.Name = TxtFile.commands[2];
                 o.ID = ID;
                 o.Number = Number;
-                o.xSec = Convert.ToByte((AREA).ToString("X4").Substring(2, 2), 16);
-                o.ySec = Convert.ToByte((AREA).ToString("X4").Substring(0, 2), 16);
+                o.xSec = (byte)((AREA).ToString("X4").Substring(2, 2), 16);
+                o.ySec = (byte)((AREA).ToString("X4").Substring(0, 2), 16);
                 if (!(o.xSec < 8))
                 {
                     o.x = (o.xSec - 135) * 192 + (x) / 10;
@@ -413,7 +413,7 @@ namespace DarkEmu_GameServer.File
         {
             try
             {
-                byte rNum = Convert.ToByte(name);
+                byte rNum = (byte)(name);
                 return rNum;
             }
             catch
@@ -439,8 +439,8 @@ namespace DarkEmu_GameServer.File
             {
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                int sp = Convert.ToInt16(TxtFile.commands[1]);
-                byte level = Convert.ToByte(TxtFile.commands[0]);
+                int sp = (Int16)(TxtFile.commands[1]);
+                byte level = (byte)(TxtFile.commands[0]);
 
                 Data.MasteryBase[level] = sp;
             }
@@ -460,9 +460,9 @@ namespace DarkEmu_GameServer.File
                 levelgold lg = new levelgold();
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                byte level = Convert.ToByte(TxtFile.commands[0]);
-                lg.min = Convert.ToInt16(TxtFile.commands[1]);
-                lg.max = Convert.ToInt16(TxtFile.commands[2]);
+                byte level = (byte)(TxtFile.commands[0]);
+                lg.min = (Int16)(TxtFile.commands[1]);
+                lg.max = (Int16)(TxtFile.commands[2]);
 
                 Data.LevelGold[level] = lg;
             }
@@ -482,9 +482,9 @@ namespace DarkEmu_GameServer.File
                 JobLevel levelinfo = new JobLevel();
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                levelinfo.level = Convert.ToByte(TxtFile.commands[0]);
-                levelinfo.exp = Convert.ToInt64(TxtFile.commands[1]);
-                levelinfo.jobtitle = Convert.ToByte(TxtFile.commands[2]);
+                levelinfo.level = (byte)(TxtFile.commands[0]);
+                levelinfo.exp = (Int64)(TxtFile.commands[1]);
+                levelinfo.jobtitle = (byte)(TxtFile.commands[2]);
 
                 Data.Joblevelinfo.Add(levelinfo);
             }
@@ -503,8 +503,8 @@ namespace DarkEmu_GameServer.File
             {
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                byte level = Convert.ToByte(TxtFile.commands[0]);
-                long exp = Convert.ToInt64(TxtFile.commands[1]);
+                byte level = (byte)(TxtFile.commands[0]);
+                long exp = (Int64)(TxtFile.commands[1]);
 
                 Data.LevelData[level] = exp;
             }
@@ -523,38 +523,38 @@ namespace DarkEmu_GameServer.File
                 MagicOption m = new MagicOption();
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                m.ID = Convert.ToInt32(TxtFile.commands[1]);
+                m.ID = (Int32)(TxtFile.commands[1]);
                 m.Name = TxtFile.commands[2];
                 m.Type = TxtFile.commands[3];
-                m.Level = Convert.ToInt32(TxtFile.commands[4]);
+                m.Level = (Int32)(TxtFile.commands[4]);
                 m.OptionPercent = Convert.ToDouble(TxtFile.commands[5].Replace('.', ','));
 
 
-                    if (ConvertBlueValue(Convert.ToInt32(TxtFile.commands[9])) != 0)
+                    if (ConvertBlueValue((Int32)(TxtFile.commands[9])) != 0)
                     {
-                        m.MinValue = ConvertBlueValue(Convert.ToInt32(TxtFile.commands[9]));
+                        m.MinValue = ConvertBlueValue((Int32)(TxtFile.commands[9]));
                     }
                     else
                     {
-                        m.MinValue = Convert.ToInt32(TxtFile.commands[9]);
+                        m.MinValue = (Int32)(TxtFile.commands[9]);
                     }
-                    if (Convert.ToInt32(TxtFile.commands[10]) != 0)
+                    if ((Int32)(TxtFile.commands[10]) != 0)
                     {
-                        if (ConvertBlueValue(Convert.ToInt32(TxtFile.commands[10])) != 0)
+                        if (ConvertBlueValue((Int32)(TxtFile.commands[10])) != 0)
                         {
-                            m.MaxValue = ConvertBlueValue(Convert.ToInt32(TxtFile.commands[10]));
+                            m.MaxValue = ConvertBlueValue((Int32)(TxtFile.commands[10]));
                         }
                         else
                         {
-                            m.MaxValue = Convert.ToInt32(TxtFile.commands[10]);
+                            m.MaxValue = (Int32)(TxtFile.commands[10]);
                         }
                     }
                     else
                     {
-                        if (ConvertBlueValue(Convert.ToInt32(TxtFile.commands[9])) != 0)
+                        if (ConvertBlueValue((Int32)(TxtFile.commands[9])) != 0)
                         {
-                            m.MinValue = ConvertBlueValue(Convert.ToInt32(TxtFile.commands[8]));
-                            m.MaxValue = ConvertBlueValue(Convert.ToInt32(TxtFile.commands[9]));
+                            m.MinValue = ConvertBlueValue((Int32)(TxtFile.commands[8]));
+                            m.MaxValue = ConvertBlueValue((Int32)(TxtFile.commands[9]));
                         }
 
                     }
@@ -587,7 +587,7 @@ namespace DarkEmu_GameServer.File
             {
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                int ID = Convert.ToInt32(TxtFile.commands[5]);
+                int ID = (Int32)(TxtFile.commands[5]);
 
                 if (ID > 0)
                     if (Data.ObjectBase[ID] != null)
@@ -646,7 +646,7 @@ namespace DarkEmu_GameServer.File
                 if (ID != null)
                 {
                     TxtFile.commands[3] = TxtFile.commands[3].Remove(0, 8);
-                    ID.Item[Convert.ToInt16(TxtFile.commands[4])] = TxtFile.commands[3];
+                    ID.Item[(Int16)(TxtFile.commands[4])] = TxtFile.commands[3];
 
                 }
             }
@@ -916,11 +916,11 @@ namespace DarkEmu_GameServer.File
                 region r = new region();
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                r.ID = Convert.ToInt32(TxtFile.commands[1]);
+                r.ID = (Int32)(TxtFile.commands[1]);
                 r.Name = TxtFile.commands[2];
                 if (r.Name == "xxx") r.Name = "";
-                //r.SecX = Convert.ToInt32(TxtFile.commands[5]);
-                //r.SecY = Convert.ToInt32(TxtFile.commands[6]);
+                //r.SecX = (Int32)(TxtFile.commands[5]);
+                //r.SecY = (Int32)(TxtFile.commands[6]);
                 Data.RegionBase.Add(r);
             }
 
@@ -988,15 +988,15 @@ namespace DarkEmu_GameServer.File
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
 
-                int ID = Convert.ToInt32(TxtFile.commands[1]);
+                int ID = (Int32)(TxtFile.commands[1]);
                 short area = short.Parse(TxtFile.commands[4]);
-                int x = Convert.ToInt32(TxtFile.commands[5]);
-                int z = Convert.ToInt32(TxtFile.commands[6]);
-                int y = Convert.ToInt32(TxtFile.commands[7]);
+                int x = (Int32)(TxtFile.commands[5]);
+                int z = (Int32)(TxtFile.commands[6]);
+                int y = (Int32)(TxtFile.commands[7]);
                 reverse o = new reverse();
                 o.ID = ID;
-                o.xSec = Convert.ToByte((area).ToString("X4").Substring(2, 2), 16);
-                o.ySec = Convert.ToByte((area).ToString("X4").Substring(0, 2), 16);
+                o.xSec = (byte)((area).ToString("X4").Substring(2, 2), 16);
+                o.ySec = (byte)((area).ToString("X4").Substring(0, 2), 16);
                 o.x = (float)(o.xSec - 135) * 192 + (x) / 10;
                 o.z = (float)z;
                 o.y = (float)((o.ySec - 92) * 192 + (y) / 10);
@@ -1016,10 +1016,10 @@ namespace DarkEmu_GameServer.File
                 TeleportPrice t = new TeleportPrice();
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
-                int id = Convert.ToInt32(TxtFile.commands[2]);
+                int id = (Int32)(TxtFile.commands[2]);
                 t.ID = id;
-                t.price = Convert.ToInt32(TxtFile.commands[3]);
-                t.level = Convert.ToInt32(TxtFile.commands[7]);
+                t.price = (Int32)(TxtFile.commands[3]);
+                t.level = (Int32)(TxtFile.commands[7]);
                 Data.TeleportPrice.Add(t);
             }
             Console.WriteLine("[INFO] Loaded " + TxtFile.amountLine + " Teleport locations");
@@ -1039,8 +1039,8 @@ namespace DarkEmu_GameServer.File
                 r.ID = l;
                 short area = short.Parse(TxtFile.commands[5]);
                 r.Name = TxtFile.commands[2];
-                r.SecX = Convert.ToByte((area).ToString("X4").Substring(2, 2), 16);
-                r.SecY = Convert.ToByte((area).ToString("X4").Substring(0, 2), 16);
+                r.SecX = (byte)((area).ToString("X4").Substring(2, 2), 16);
+                r.SecY = (byte)((area).ToString("X4").Substring(0, 2), 16);
                 Data.Cave.Add(r);
             }
             Console.WriteLine("[INFO] Loaded " + TxtFile.amountLine + " Cave teleport data");
@@ -1078,8 +1078,8 @@ namespace DarkEmu_GameServer.File
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
                 c.name = TxtFile.commands[0];
-                c.xsec = Convert.ToByte(TxtFile.commands[1]);
-                c.ysec = Convert.ToByte(TxtFile.commands[2]);
+                c.xsec = (byte)(TxtFile.commands[1]);
+                c.ysec = (byte)(TxtFile.commands[2]);
                 string[] x1x = new string[2];
                 string[] z1z = new string[2];
                 string[] y1y = new string[2];
@@ -1118,8 +1118,8 @@ namespace DarkEmu_GameServer.File
                     List<string> lista = new List<string>();
                     e = TxtFile.commands[0];
                     e1 = TxtFile.commands[1];
-                    xsec = Convert.ToInt32(TxtFile.commands[2]);
-                    ysec = Convert.ToInt32(TxtFile.commands[3]);
+                    xsec = (Int32)(TxtFile.commands[2]);
+                    ysec = (Int32)(TxtFile.commands[3]);
                     e2 = TxtFile.commands[4];
                     e3 = TxtFile.commands[5];
                     e4 = TxtFile.commands[6];
@@ -1161,9 +1161,9 @@ namespace DarkEmu_GameServer.File
             {
                 line = TxtFile.lines[i].ToString();
                 TxtFile.commands = line.Split('\t');
-                Quest.Questid = Convert.ToInt32(TxtFile.commands[1]);
+                Quest.Questid = (Int32)(TxtFile.commands[1]);
                 Quest.QuestNPC = Convert.ToString(TxtFile.commands[2]);
-                Quest.QuestLevel = Convert.ToInt32(TxtFile.commands[3]);
+                Quest.QuestLevel = (Int32)(TxtFile.commands[3]);
                 Data.QuestData.Add(Quest);
             }
             TxtFile.ReadFromFile(@"\data\questcontentsdata.txt", '\t');
@@ -1188,7 +1188,7 @@ namespace DarkEmu_GameServer.File
                 line = TxtFile.lines[i].ToString();
                 TxtFile.commands = line.Split('\t');
                 trader_data Data = new trader_data();
-                Data.Amount = Convert.ToInt32(TxtFile.commands[0]);
+                Data.Amount = (Int32)(TxtFile.commands[0]);
                 /* ################
                  * Definitions
                  * Extra check on trader amounts to ensure no exploiting
@@ -1216,11 +1216,11 @@ namespace DarkEmu_GameServer.File
                 s = TxtFile.lines[l].ToString();
                 TxtFile.commands = s.Split('\t');
 
-                List<obj> filter = Systems.Objects.FindAll(o => o.ID == Convert.ToInt32(TxtFile.commands[0]));
+                List<obj> filter = Systems.Objects.FindAll(o => o.ID == (Int32)(TxtFile.commands[0]));
                 foreach (obj o in filter)
                 {
-                    o.oldAgresif = Convert.ToByte(TxtFile.commands[1]);
-                    if (o.Type == 0 || o.Type == 16) o.Agresif = Convert.ToByte(TxtFile.commands[1]);
+                    o.oldAgresif = (byte)(TxtFile.commands[1]);
+                    if (o.Type == 0 || o.Type == 16) o.Agresif = (byte)(TxtFile.commands[1]);
                 }
             }
         }

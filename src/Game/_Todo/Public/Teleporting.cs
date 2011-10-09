@@ -84,7 +84,7 @@ namespace DarkEmu_GameServer
                     //Set state
                     this.Character.InGame = false;
                     //Update location
-                    Teleport_UpdateXYZ(Convert.ToByte(teleportselect));
+                    Teleport_UpdateXYZ((byte)(teleportselect));
                     //Despawn objects
                     ObjectDeSpawnCheck();
                     //Despawn player to other players
@@ -92,7 +92,7 @@ namespace DarkEmu_GameServer
                     //Required
                     client.Send(Packet.TeleportStart2());
                     //Send loading screen image
-                    this.client.Send(Packet.TeleportImage(Data.PointBase[Convert.ToByte(teleportselect)].xSec, Data.PointBase[Convert.ToByte(teleportselect)].ySec));
+                    this.client.Send(Packet.TeleportImage(Data.PointBase[(byte)(teleportselect)].xSec, Data.PointBase[(byte)(teleportselect)].ySec));
                     //Set bool
                     this.Character.Teleport = true;
                 }

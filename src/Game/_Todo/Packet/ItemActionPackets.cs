@@ -366,7 +366,7 @@ namespace DarkEmu_GameServer
 
                     if (bluecount != 0)
                     {
-                        Writer.Byte(Convert.ToByte(Data.ItemBlue[itemid].totalblue));
+                        Writer.Byte((byte)(Data.ItemBlue[itemid].totalblue));
                         for (int i = 0; i <= Data.ItemBlue[itemid].totalblue - 1; i++)
                         {
 
@@ -419,7 +419,7 @@ namespace DarkEmu_GameServer
 
                     if (bluecount != 0)
                     {
-                        Writer.Byte(Convert.ToByte(Data.ItemBlue[itemid].totalblue));
+                        Writer.Byte((byte)(Data.ItemBlue[itemid].totalblue));
                         for (int i = 0; i <= Data.ItemBlue[itemid].totalblue - 1; i++)
                         {
                             Writer.DWord(Data.MagicOptions.Find(mg => (mg.Name == Convert.ToString(Data.ItemBlue[itemid].blue[i]))).ID);
@@ -458,7 +458,7 @@ namespace DarkEmu_GameServer
 
                     if (bluecount != 0)
                     {
-                        Writer.Byte(Convert.ToByte(Data.ItemBlue[itemid].totalblue));
+                        Writer.Byte((byte)(Data.ItemBlue[itemid].totalblue));
                         for (int i = 0; i <= Data.ItemBlue[itemid].totalblue - 1; i++)
                         {
 

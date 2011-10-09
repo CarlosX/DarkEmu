@@ -80,7 +80,7 @@ namespace DarkEmu_GameServer
                     MsSQL.InsertData("INSERT INTO guild (guild_name, guild_level, guild_points, guild_news_t, guild_news_m, guild_members_t, guild_master_id) VALUES ('" + GuildName + "','1','0','" + "" + "','" + "" + "','1','" + Character.Information.CharacterID + "')");
                     //Get guild id
                     string guildid = MsSQL.GetData("SELECT id FROM guild WHERE guild_name='" + GuildName + "'", "id");
-                    int docount = Convert.ToInt32(guildid);
+                    int docount = (Int32)(guildid);
                     //Insert member into database
                     MsSQL.InsertData("INSERT INTO guild_members (guild_id, guild_member_id, guild_rank, guild_points, guild_fortress, guild_grant, guild_perm_join, guild_perm_withdraw, guild_perm_union, guild_perm_storage, guild_perm_notice) VALUES ('" + docount + "','" + Character.Information.CharacterID + "','0','0','1','','1','1','1','1','1')");
                     //Load our new guild

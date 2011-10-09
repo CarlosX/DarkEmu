@@ -321,7 +321,7 @@ namespace DarkEmu_GameServer
                     ammo = reader.GetByte(5);
                 }
                 ms.Close();
-                return Convert.ToByte(ammo);
+                return (byte)(ammo);
             }
         }
 

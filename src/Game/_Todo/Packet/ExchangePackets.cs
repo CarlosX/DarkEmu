@@ -64,7 +64,7 @@ namespace DarkEmu_GameServer
                         Writer.DWord(Data.ItemBase[Exhange[i].ID].Defans.Durability);
                         if (Data.ItemBlue[Exhange[i].dbID].totalblue != 0)
                         {
-                            Writer.Byte(Convert.ToByte(Data.ItemBlue[Exhange[i].dbID].totalblue));
+                            Writer.Byte((byte)(Data.ItemBlue[Exhange[i].dbID].totalblue));
                             for (int a = 1; a <= Data.ItemBlue[Exhange[i].dbID].totalblue; a++)
                             {
                                 Writer.DWord(Data.MagicOptions.Find(mg => (mg.Name == Convert.ToString(Data.ItemBlue[Exhange[i].dbID].blue[i]))).ID);

@@ -53,7 +53,7 @@ namespace DarkEmu_GameServer
                     TimeSpan Timecheck = Convert.ToDateTime(Character.Premium.StartTime) - DateTime.Now;
                     double TimeRemaining = Timecheck.TotalMinutes;
                     //Finally we send our packet to the user (Icon).
-                    client.Send(Packet.PremiumTicketData(Character.Premium.TicketItemID, Convert.ToInt32(TimeRemaining)));
+                    client.Send(Packet.PremiumTicketData(Character.Premium.TicketItemID, (Int32)(TimeRemaining)));
                 }
             }
             catch (Exception ex)
@@ -92,7 +92,7 @@ namespace DarkEmu_GameServer
                             //Check our slot inside the database
                             int slotcheck = MsSQL.GetDataInt("SELECT * FROM char_items WHERE itemnumber='" + slot + "' AND owner='" + Character.Information.CharacterID + "' AND storagetype='0'", "slot");
                             //Set slot item information (item).
-                            Global.slotItem item = GetItem((uint)Character.Information.CharacterID, Convert.ToByte(slotcheck), 0);
+                            Global.slotItem item = GetItem((uint)Character.Information.CharacterID, (byte)(slotcheck), 0);
                             //Set model information of the pet
                             int model = Global.objectdata.GetItem(Data.ItemBase[item.ID].ObjectName);
                             //Set id for the pet (First database value is always unique).
@@ -130,7 +130,7 @@ namespace DarkEmu_GameServer
                             //Set global information for the pet
                             Character.Grabpet.Details = o;
                             //Send the visual packet for details of the pet management
-                            client.Send(Packet.Pet_Information_grab(o, Convert.ToByte(slotcheck)));
+                            client.Send(Packet.Pet_Information_grab(o, (byte)(slotcheck)));
                             //Spawn
                             o.SpawnMe();
                             //Update state into database
@@ -280,7 +280,7 @@ namespace DarkEmu_GameServer
                 if (count > 0)
                 {
                     //Send our packet
-                    client.Send(Packet.SendFriendList(Convert.ToByte(count), Character));
+                    client.Send(Packet.SendFriendList((byte)(count), Character));
                     //Open new sql data reader
                     using (SqlDataReader reader = ms.Read())
                     {
@@ -678,7 +678,7 @@ namespace DarkEmu_GameServer
                 if (Enabled == "1")
                 {
                     //We send the information they chosen
-                    client.Send(Packet.Weather(Convert.ToByte(Type), Convert.ToInt32(Info)));
+                    client.Send(Packet.Weather((byte)(Type), (Int32)(Info)));
                 }
                 //If disabled
                 else

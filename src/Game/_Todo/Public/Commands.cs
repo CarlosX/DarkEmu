@@ -371,7 +371,7 @@ namespace DarkEmu_GameServer
         void GM_TRANSFORM(string model)
         {
             //Check names monsters only
-            if (Data.ObjectBase[Convert.ToInt32(model)].Name.Contains("MOB_"))
+            if (Data.ObjectBase[(Int32)(model)].Name.Contains("MOB_"))
             {
                 //Send list
                 List<int> To = Character.Spawn;
@@ -380,7 +380,7 @@ namespace DarkEmu_GameServer
                 //Send to item buff
                 SpecialBuff(skillid);
                 //Send packet
-                Send(To, Packet.Transform(Convert.ToInt32(model), Character.Information.UniqueID));
+                Send(To, Packet.Transform((Int32)(model), Character.Information.UniqueID));
             }
             else
             {
@@ -462,7 +462,7 @@ namespace DarkEmu_GameServer
             short ignore = reader.Int16();
             short skilllenght = reader.Int16();
             string skill = reader.String(skilllenght);
-            Character.Action.UsingSkillID = Convert.ToInt32(skill);
+            Character.Action.UsingSkillID = (Int32)(skill);
             SkillBuff();
         }
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -478,7 +478,7 @@ namespace DarkEmu_GameServer
                 Framework.Ini ini;
                 ini = new Framework.Ini(Environment.CurrentDirectory + @"\Settings\Settings.ini");
                 string monstermaskid = ini.GetValue("Custom", "Monstermaskid","2002").ToString();
-                int maskid = Convert.ToInt32(monstermaskid);
+                int maskid = (Int32)(monstermaskid);
 
                 //Get freeslots
                 byte slot = GetFreeSlot();
@@ -486,7 +486,7 @@ namespace DarkEmu_GameServer
                 if (slot == 0) return;
 
                 AddItem(itemID, (short)itemPlus, slot, Character.Information.CharacterID, 0);
-                client.Send(Packet.GM_MAKEITEM(0, slot, itemID, (short)itemPlus, (int)Data.ItemBase[itemID].Defans.Durability, Data.ItemBase[itemID].ID, Convert.ToInt32(monstermaskid)));
+                client.Send(Packet.GM_MAKEITEM(0, slot, itemID, (short)itemPlus, (int)Data.ItemBase[itemID].Defans.Durability, Data.ItemBase[itemID].ID, (Int32)(monstermaskid)));
 
                 Print.Format("[Gameserver:              " + Character.Information.Name + " Has created:  {0}", Data.ItemBase[itemID].Name);
             }
@@ -507,7 +507,7 @@ namespace DarkEmu_GameServer
                 Framework.Ini ini;
                 ini = new Framework.Ini(Environment.CurrentDirectory + @"\Settings\Settings.ini");
                 string count = ini.GetValue("Custom", "GMSpawnCount", "1").ToString();
-                int total = Convert.ToInt16(count);
+                int total = (Int16)(count);
 
                 for (int i = 1; i <= total; i++)
                 {
@@ -786,7 +786,7 @@ namespace DarkEmu_GameServer
                                     all.client.Send(Packet.TeleportStart2());
                                     //Send loading screen image
                                     if (all.Character.Position.xSec != Character.Position.xSec)
-                                        all.client.Send(Packet.TeleportImage(Data.PointBase[Convert.ToByte(Character.Position.xSec)].xSec, Data.PointBase[Convert.ToByte(Character.Position.ySec)].ySec));
+                                        all.client.Send(Packet.TeleportImage(Data.PointBase[(byte)(Character.Position.xSec)].xSec, Data.PointBase[(byte)(Character.Position.ySec)].ySec));
                                     //Set bool
                                     all.Character.Teleport = true;
                                 }

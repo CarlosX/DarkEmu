@@ -59,9 +59,9 @@ namespace DarkEmu_GameServer
                         {
                             string sName = ini.GetValue("SERVERS", sectname, "");
                             Systems.SRX_Serverinfo SServerInfo = new Systems.SRX_Serverinfo();
-                            SServerInfo.id = Convert.ToUInt16(ini.GetValue(sName, "id", 0));
+                            SServerInfo.id = (UInt16)(ini.GetValue(sName, "id", 0));
                             SServerInfo.ip = ini.GetValue(sName, "ip", "127.0.0.1");
-                            SServerInfo.ipcport = Convert.ToUInt16(ini.GetValue(sName, "ipcport", defaultPort));
+                            SServerInfo.ipcport = (UInt16)(ini.GetValue(sName, "ipcport", defaultPort));
                             SServerInfo.code = ini.GetValue(sName, "code", "t");
                             if (SServerInfo.ip == "" || SServerInfo.id == 0 || SServerInfo.ipcport == 0 || LSList.ContainsKey(SServerInfo.id))
                             {

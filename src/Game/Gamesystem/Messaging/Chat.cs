@@ -332,7 +332,7 @@ namespace DarkEmu_GameServer
                 // comando[0] = makeitem <- comando
                 // comando[1] = name     <- id_item
                 // comando[2] = plus     <- plus
-                switch (comando[0])
+                switch (comando[0].ToLower())
                 {
                     case "makeitem":
                         if (comando[1] != "")
@@ -366,7 +366,7 @@ namespace DarkEmu_GameServer
                 //Temporary in definition as c
                 int tmp = c;
                 //Set string formatting
-                hex += String.Format("{0:x2}", (uint)System.Convert.ToUInt32(tmp.ToString()));
+                hex += String.Format("{0:x2}", (uint)System.(UInt32)(tmp.ToString()));
             }
             return hex;
         }

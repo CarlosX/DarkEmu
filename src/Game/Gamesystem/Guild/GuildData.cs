@@ -136,7 +136,7 @@ namespace DarkEmu_GameServer
                 }
 
                 ms = new MsSQL("SELECT * FROM guild_members WHERE guild_id='" + Character.Network.Guild.Guildid + "'");
-                Character.Network.Guild.TotalMembers = Convert.ToByte(ms.Count());
+                Character.Network.Guild.TotalMembers = (byte)(ms.Count());
 
                 ms.Close();
                 //Set max players allowed in guild

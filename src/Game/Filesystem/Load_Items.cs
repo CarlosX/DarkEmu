@@ -44,7 +44,7 @@ namespace DarkEmu_GameServer.File
                 //Split string
                 TxtFile.commands = Stringinformation.Split('\t');
                 //Read id from first row
-                int id = Convert.ToInt32(TxtFile.commands[0]);
+                int id = (Int32)(TxtFile.commands[0]);
                 //Add item to database
                 Data.EventDataBase.ID.Add(id);
             }
@@ -71,7 +71,7 @@ namespace DarkEmu_GameServer.File
                 //Split string
                 TxtFile.commands = Stringinformation.Split('\t');
                 //Read id from first row
-                int id = Convert.ToInt32(TxtFile.commands[0]);
+                int id = (Int32)(TxtFile.commands[0]);
                 //Add item to database
                 Data.EventDataBase.ID.Add(id);
             }
@@ -99,45 +99,45 @@ namespace DarkEmu_GameServer.File
                 TxtFile.commands = Stringinformation.Split('\t');
                 item_database it = new item_database();
                 it.Name = TxtFile.commands[2];
-                it.ID = Convert.ToInt32(TxtFile.commands[1]);
-                it.Class_A = Convert.ToInt32(TxtFile.commands[9]);
-                it.Class_D = Convert.ToInt32(TxtFile.commands[10]);
-                it.Class_B = Convert.ToInt32(TxtFile.commands[11]);
-                it.Class_C = Convert.ToInt32(TxtFile.commands[12]);
-                it.Race = Convert.ToByte(TxtFile.commands[14]);
-                it.SOX = Convert.ToByte(TxtFile.commands[15]);
-                it.SoulBound = Convert.ToByte(TxtFile.commands[18]);
-                it.Shop_price = Convert.ToInt32(TxtFile.commands[26]);
-                it.Storage_price = Convert.ToInt32(TxtFile.commands[30]);
-                it.Sell_Price = Convert.ToInt32(TxtFile.commands[31]);
-                it.Level = Convert.ToByte(TxtFile.commands[33]);
-                it.Max_Stack = Convert.ToInt32(TxtFile.commands[57]);
-                it.Gender = Convert.ToByte(TxtFile.commands[58]);
-                it.Degree = Convert.ToByte(TxtFile.commands[61]);
+                it.ID = (Int32)(TxtFile.commands[1]);
+                it.Class_A = (Int32)(TxtFile.commands[9]);
+                it.Class_D = (Int32)(TxtFile.commands[10]);
+                it.Class_B = (Int32)(TxtFile.commands[11]);
+                it.Class_C = (Int32)(TxtFile.commands[12]);
+                it.Race = (byte)(TxtFile.commands[14]);
+                it.SOX = (byte)(TxtFile.commands[15]);
+                it.SoulBound = (byte)(TxtFile.commands[18]);
+                it.Shop_price = (Int32)(TxtFile.commands[26]);
+                it.Storage_price = (Int32)(TxtFile.commands[30]);
+                it.Sell_Price = (Int32)(TxtFile.commands[31]);
+                it.Level = (byte)(TxtFile.commands[33]);
+                it.Max_Stack = (Int32)(TxtFile.commands[57]);
+                it.Gender = (byte)(TxtFile.commands[58]);
+                it.Degree = (byte)(TxtFile.commands[61]);
                 //Stone related (Stone creation)
                 #region Stone creation
-                it.EARTH_ELEMENTS_AMOUNT_REQ = Convert.ToInt32(TxtFile.commands[118]);
+                it.EARTH_ELEMENTS_AMOUNT_REQ = (Int32)(TxtFile.commands[118]);
                 it.EARTH_ELEMENTS_NAME = Convert.ToString(TxtFile.commands[119]);
-                it.WATER_ELEMENTS_AMOUNT_REQ = Convert.ToInt32(TxtFile.commands[120]);
+                it.WATER_ELEMENTS_AMOUNT_REQ = (Int32)(TxtFile.commands[120]);
                 it.WATER_ELEMENTS_NAME = Convert.ToString(TxtFile.commands[121]);
-                it.FIRE_ELEMENTS_AMOUNT_REQ = Convert.ToInt32(TxtFile.commands[122]);
+                it.FIRE_ELEMENTS_AMOUNT_REQ = (Int32)(TxtFile.commands[122]);
                 it.FIRE_ELEMENTS_NAME = Convert.ToString(TxtFile.commands[123]);
-                it.WIND_ELEMENTS_AMOUNT_REQ = Convert.ToInt32(TxtFile.commands[124]);
+                it.WIND_ELEMENTS_AMOUNT_REQ = (Int32)(TxtFile.commands[124]);
                 it.WIND_ELEMENTS_NAME = Convert.ToString(TxtFile.commands[125]);
                 #endregion
                 it.Defans.Durability = Convert.ToDouble(TxtFile.commands[63]);
                 it.Defans.MinPhyDef = Convert.ToDouble(TxtFile.commands[65]);
                 it.Defans.PhyDefINC = Convert.ToDouble(TxtFile.commands[67]);
                 it.Defans.Parry = Convert.ToDouble(TxtFile.commands[68]);
-                it.Defans.MinBlock = Convert.ToByte(Math.Round(Convert.ToDouble(TxtFile.commands[74])));
-                it.Defans.MaxBlock = Convert.ToByte(Math.Round(Convert.ToDouble(TxtFile.commands[75])));
+                it.Defans.MinBlock = (byte)(Math.Round(Convert.ToDouble(TxtFile.commands[74])));
+                it.Defans.MaxBlock = (byte)(Math.Round(Convert.ToDouble(TxtFile.commands[75])));
                 it.Defans.MinMagDef = Convert.ToDouble(TxtFile.commands[76]);
                 it.Defans.MagDefINC = Convert.ToDouble(TxtFile.commands[78]);
                 it.Defans.PhyAbsorb = Convert.ToDouble(TxtFile.commands[79]);
                 it.Defans.MagAbsorb = Convert.ToDouble(TxtFile.commands[80]);
                 it.Defans.AbsorbINC = Convert.ToDouble(TxtFile.commands[81]);
-                it.needEquip = Convert.ToBoolean(Convert.ToByte(TxtFile.commands[93]));
-                it.ATTACK_DISTANCE = Convert.ToInt16(TxtFile.commands[94]);
+                it.needEquip = Convert.ToBoolean((byte)(TxtFile.commands[93]));
+                it.ATTACK_DISTANCE = (Int16)(TxtFile.commands[94]);
                 it.Attack.Min_LPhyAttack = Convert.ToDouble(TxtFile.commands[95]);
                 it.Attack.Min_HPhyAttack = Convert.ToDouble(TxtFile.commands[97]);
                 it.Attack.PhyAttackInc = Convert.ToDouble(TxtFile.commands[99]);
@@ -146,12 +146,12 @@ namespace DarkEmu_GameServer.File
                 it.Attack.MagAttackINC = Convert.ToDouble(TxtFile.commands[104]);
                 it.Attack.MinAttackRating = Convert.ToDouble(TxtFile.commands[113]);
                 it.Attack.MaxAttackRating = Convert.ToDouble(TxtFile.commands[114]);
-                it.Attack.MinCrit = Convert.ToByte(Convert.ToDouble(TxtFile.commands[116]));
-                it.Attack.MaxCrit = Convert.ToByte(Convert.ToDouble(TxtFile.commands[117]));
+                it.Attack.MinCrit = (byte)(Convert.ToDouble(TxtFile.commands[116]));
+                it.Attack.MaxCrit = (byte)(Convert.ToDouble(TxtFile.commands[117]));
                 it.ObjectName = TxtFile.commands[119];
-                it.Use_Time = Convert.ToInt32(TxtFile.commands[118]);
-                it.Use_Time2 = Convert.ToInt32(TxtFile.commands[122]);
-                it.MaxBlueAmount = Convert.ToByte(TxtFile.commands[158]);
+                it.Use_Time = (Int32)(TxtFile.commands[118]);
+                it.Use_Time2 = (Int32)(TxtFile.commands[122]);
+                it.MaxBlueAmount = (byte)(TxtFile.commands[158]);
 
                 if (it.ObjectName.Contains("SKILL"))
                     foreach (s_data sd in Data.SkillBase)

@@ -1687,7 +1687,7 @@ namespace DarkEmu_GameServer
                 Character.Information.Gold += Data.ItemBase[item.ID].Sell_Price * amount;
                 client.Send(Packet.UpdateGold(Character.Information.Gold));
                 SaveGold();
-                int owner = Convert.ToInt32(MsSQL.GetData("SELECT * FROM char_items WHERE id='" + item.dbID + "'", "owner"));
+                int owner = (Int32)(MsSQL.GetData("SELECT * FROM char_items WHERE id='" + item.dbID + "'", "owner"));
                 if (owner == Character.Information.CharacterID)
                 {
                     if (amount <= Data.ItemBase[item.ID].Max_Stack)

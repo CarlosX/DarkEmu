@@ -74,9 +74,9 @@ namespace DarkEmu_GameServer.Global
                     Quantity = 1;
                     break;
                 case "arrows":
-                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.ETCd)) Quantity = Convert.ToByte(150 / rnd.Next(1, 2));
-                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.ETCd)) Quantity = Convert.ToByte(200 / rnd.Next(1, 3));
-                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.ETCd)) Quantity = Convert.ToByte(100 / rnd.Next(1, 2));
+                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.ETCd)) Quantity = (byte)(150 / rnd.Next(1, 2));
+                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.ETCd)) Quantity = (byte)(200 / rnd.Next(1, 3));
+                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.ETCd)) Quantity = (byte)(100 / rnd.Next(1, 2));
                     if (mobType == 0 && (rnd.Next(0, 300) < 3 * Systems.Rate.ETCd)) Quantity = 50;
                     if (Quantity == 1) Quantity = 50;
                     break;
@@ -91,24 +91,24 @@ namespace DarkEmu_GameServer.Global
                 case "sox"://Seal drops (Should be defined per seal type).
                     #region Seal Items
                     if (mobType == 4 && (rnd.Next(0, 400) < 3 * Systems.Rate.Sox)) Amountinfo = 1;
-                    if (mobType == 3 && (rnd.Next(0, 400) < 5 * Systems.Rate.Sox)) Amountinfo = Convert.ToByte(rnd.Next(1, 3));
+                    if (mobType == 3 && (rnd.Next(0, 400) < 5 * Systems.Rate.Sox)) Amountinfo = (byte)(rnd.Next(1, 3));
                     if (mobType == 1 && (rnd.Next(0, 400) < 2 * Systems.Rate.Sox)) Amountinfo = 1;
                     if (mobType == 0 && (rnd.Next(0, 400) < 2 * Systems.Rate.Sox)) Amountinfo = 1;
                     #endregion
                     break;
                 case "tablets"://Tablets (Defined per degree / Level drop).
                     #region Alchemy Tablets
-                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.Alchemyd)) Amountinfo = Convert.ToByte(rnd.Next(1, 3));
-                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.Alchemyd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
-                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.Alchemyd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
+                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.Alchemyd)) Amountinfo = (byte)(rnd.Next(1, 3));
+                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.Alchemyd)) Amountinfo = (byte)(rnd.Next(1, 2));
+                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.Alchemyd)) Amountinfo = (byte)(rnd.Next(1, 2));
                     if (mobType == 0 && (rnd.Next(0, 300) < 3 * Systems.Rate.Alchemyd)) Amountinfo = 1;
                     #endregion
                     break;
                 case "elixir"://Elixir drops speak for itself.
                     #region Elixirs
-                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.Alchemyd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
-                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.Alchemyd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
-                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.Alchemyd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
+                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.Alchemyd)) Amountinfo = (byte)(rnd.Next(1, 2));
+                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.Alchemyd)) Amountinfo = (byte)(rnd.Next(1, 2));
+                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.Alchemyd)) Amountinfo = (byte)(rnd.Next(1, 2));
                     if (mobType == 0 && (rnd.Next(0, 300) < 3 * Systems.Rate.Alchemyd)) Amountinfo = 1;
                     #endregion
                     break;
@@ -116,25 +116,25 @@ namespace DarkEmu_GameServer.Global
                     //Need to specify event rates later
                 case "event":
                     #region Alchemy Materials
-                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.Alchemyd)) Amountinfo = Convert.ToByte(rnd.Next(2, 4));
-                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.Alchemyd)) Amountinfo = Convert.ToByte(rnd.Next(4, 6));
-                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.Alchemyd)) Amountinfo = Convert.ToByte(rnd.Next(1, 3));
+                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.Alchemyd)) Amountinfo = (byte)(rnd.Next(2, 4));
+                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.Alchemyd)) Amountinfo = (byte)(rnd.Next(4, 6));
+                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.Alchemyd)) Amountinfo = (byte)(rnd.Next(1, 3));
                     if (mobType == 0 && (rnd.Next(0, 300) < 3 * Systems.Rate.Alchemyd)) Amountinfo = 1;
                     #endregion
                     break;
                 case "arrows"://This contains bolts and arrows).
                     #region Ammos
-                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.ETCd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
-                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.ETCd)) Amountinfo = Convert.ToByte(rnd.Next(1, 3));
+                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.ETCd)) Amountinfo = (byte)(rnd.Next(1, 2));
+                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.ETCd)) Amountinfo = (byte)(rnd.Next(1, 3));
                     if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.ETCd)) Amountinfo = 1;
                     if (mobType == 0 && (rnd.Next(0, 300) < 3 * Systems.Rate.ETCd)) Amountinfo = 1;
                     #endregion
                     break;
                 case "potions"://Potions (Enough said).
                     #region Potions
-                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.ETCd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
-                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.ETCd)) Amountinfo = Convert.ToByte(rnd.Next(4, 9));
-                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.ETCd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
+                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.ETCd)) Amountinfo = (byte)(rnd.Next(1, 2));
+                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.ETCd)) Amountinfo = (byte)(rnd.Next(4, 9));
+                    if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.ETCd)) Amountinfo = (byte)(rnd.Next(1, 2));
                     if (mobType == 0 && (rnd.Next(0, 300) < 3 * Systems.Rate.ETCd)) Amountinfo = 1;
                     #endregion
                     break;
@@ -144,8 +144,8 @@ namespace DarkEmu_GameServer.Global
                     break;
                 case "scrolls"://Return scrolls (And related to that).
                     #region return scrolls
-                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.ETCd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
-                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.ETCd)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
+                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.ETCd)) Amountinfo = (byte)(rnd.Next(1, 2));
+                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.ETCd)) Amountinfo = (byte)(rnd.Next(1, 2));
                     if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.ETCd)) Amountinfo = 1;
                     if (mobType == 0 && (rnd.Next(0, 300) < 3 * Systems.Rate.ETCd)) Amountinfo = 1;
                     #endregion
@@ -154,8 +154,8 @@ namespace DarkEmu_GameServer.Global
                 case "weapons"://Weapon drops(speaks for itself).
                 case "armors"://Armor drops (Garm, Prot etc).
                     #region Normal Items
-                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.Item)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
-                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.Item)) Amountinfo = Convert.ToByte(rnd.Next(1, 2));
+                    if (mobType == 4 && (rnd.Next(0, 300) < 7 * Systems.Rate.Item)) Amountinfo = (byte)(rnd.Next(1, 2));
+                    if (mobType == 3 && (rnd.Next(0, 300) < 300 * Systems.Rate.Item)) Amountinfo = (byte)(rnd.Next(1, 2));
                     if (mobType == 1 && (rnd.Next(0, 300) < 5 * Systems.Rate.Item)) Amountinfo = 1;
                     if (mobType == 0 && (rnd.Next(0, 300) < 3 * Systems.Rate.Item)) Amountinfo = 1;
                     #endregion

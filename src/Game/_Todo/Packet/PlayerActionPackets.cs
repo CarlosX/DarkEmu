@@ -237,7 +237,7 @@ namespace DarkEmu_GameServer
             PacketWriter Writer = new PacketWriter();
             Writer.Create(Systems.SERVER_ITEM_REPAIR);
             Writer.Byte(slot);
-            Writer.DWord(Convert.ToInt32(durability));
+            Writer.DWord((Int32)(durability));
             return Writer.GetBytes();
         }
         public static byte[] SendWebMall(int Myid)

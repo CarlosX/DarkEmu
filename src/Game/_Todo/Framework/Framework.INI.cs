@@ -690,7 +690,7 @@ namespace Framework
 
             try
             {
-                return Convert.ToInt32(value);
+                return (Int32)(value);
             }
             catch
             {

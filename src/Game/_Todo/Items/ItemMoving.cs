@@ -171,7 +171,7 @@ namespace DarkEmu_GameServer
                     //Multiply the price, per amount
                     storageprice *= item.Amount;
                     //Anti hack check make sure that the owner of the item is correct
-                    int ownerid = Convert.ToInt32(MsSQL.GetData("SELECT * FROM char_items WHERE id='" + item.dbID + "'", "owner"));
+                    int ownerid = (Int32)(MsSQL.GetData("SELECT * FROM char_items WHERE id='" + item.dbID + "'", "owner"));
                     //Check if the owner really owns the item.
                     if (ownerid == Character.Information.CharacterID)
                     {
@@ -221,7 +221,7 @@ namespace DarkEmu_GameServer
                     //Multiply the price, per amount
                     storageprice *= item.Amount;
                     //Anti hack check make sure that the owner of the item is correct
-                    int ownerid = Convert.ToInt32(MsSQL.GetData("SELECT * FROM char_items WHERE id='" + item.dbID + "'", "owner"));
+                    int ownerid = (Int32)(MsSQL.GetData("SELECT * FROM char_items WHERE id='" + item.dbID + "'", "owner"));
                     //Check if the owner really owns the item.
                     if (ownerid == Character.Information.CharacterID)
                     {

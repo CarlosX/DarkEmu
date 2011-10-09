@@ -176,7 +176,7 @@ namespace DarkEmu_GameServer
                     reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        GetResults = Convert.ToInt32(reader[column].ToString());
+                        GetResults = (Int32)(reader[column].ToString());
                     }
                     if (!reader.IsClosed) reader.Close();
                 }
@@ -204,7 +204,7 @@ namespace DarkEmu_GameServer
                     reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        GetResults = Convert.ToInt64(reader[column].ToString());
+                        GetResults = (Int64)(reader[column].ToString());
                     }
                     if (!reader.IsClosed) reader.Close();
                 }
