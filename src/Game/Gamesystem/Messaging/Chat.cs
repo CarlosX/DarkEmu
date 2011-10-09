@@ -338,6 +338,7 @@ namespace DarkEmu_GameServer
 
                         break;
                     default:
+                        Console.WriteLine("Command: {0} No exist",comando[0]);
                         break;
                 }
             }

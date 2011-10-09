@@ -432,7 +432,7 @@ namespace DarkEmu_GameServer
             /////////////////////////////////////////////////////// Account / Gm Check
             #region Account ID + Gm Check
             Writer.DWord(c.Account.ID);
-            Writer.Byte(c.Information.GM);
+            Writer.Byte(0);//c.Information.GM
             #endregion
             /////////////////////////////////////////////////////// Quickbar + Autopotion
             #region Bar information
