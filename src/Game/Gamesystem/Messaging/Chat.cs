@@ -63,6 +63,13 @@ namespace DarkEmu_GameServer
                         string Text = Reader.Text3();
                         //Close packet reader
                         Reader.Close();
+
+                        // .additem 111 12
+                        if (Character.Information.GM == 1 && Text[0] == '.')
+                        {
+                            gmCommands(Text);
+                        }
+
                         //Repeat for each in range player
                         foreach (int member in Rangedplayers)
                         {
@@ -312,6 +319,31 @@ namespace DarkEmu_GameServer
                 Console.WriteLine("Chat error {0}", errorinformation);
                 //Write the information to the log system
                 Systems.Debugger.Write(errorinformation);
+            }
+        }
+        void gmCommands(string text)
+        {
+            string proc = text.Replace(".", "");
+            try
+            {
+                //proc = makeitem 122 12
+                string[] comando = proc.Split(' ');
+
+                // comando[0] = makeitem <- comando
+                // comando[1] = 122     <- id_item
+
+                switch (comando[0])
+                {
+                    case "makeitem":
+
+                        break;
+                    default:
+                        break;
+                }
+            }
+            catch (Exception ep)
+            {
+
             }
         }
         //From message to messagelong conversion
