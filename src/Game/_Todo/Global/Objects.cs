@@ -1247,9 +1247,9 @@ namespace DarkEmu_GameServer
                     this.x = reX;
                     this.y = reY;
                     Send(Packet.Movement(new DarkEmu_GameServer.Global.vektor(this.UniqueID,
-                                                    Formule.packetx((float)(this.x), this.xSec),
-                                                    (float)(z),
-                                                    Formule.packety((float)(this.y), this.ySec),
+                                                    Formule.packetx(Convert.ToSingle(this.x), this.xSec),
+                                                    Convert.ToSingle(z),
+                                                    Formule.packety(Convert.ToSingle(this.y), this.ySec),
                                                     this.xSec,
                                                     this.ySec)));
 
