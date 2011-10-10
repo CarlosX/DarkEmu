@@ -1198,8 +1198,7 @@ namespace DarkEmu_GameServer
         {
             
             if (AutoRun != null) AutoRun.Dispose();
-            AutoRun = new Timer(new TimerCallback(AutoRunCallBack), 0, 0, time);
-
+            AutoRun = new Timer(new TimerCallback(AutoRunCallBack), 0, time, 0);
         }
         public void StopAutoRunTimer()
         {
@@ -1253,7 +1252,6 @@ namespace DarkEmu_GameServer
                                                     Formule.packety((float)(this.y), this.ySec),
                                                     this.xSec,
                                                     this.ySec)));
-                    Console.WriteLine("Movmt: x:{0} - y:{1}",x,y);
                 }
                 CheckEveryOne();
             }
@@ -1505,7 +1503,7 @@ namespace DarkEmu_GameServer
         }
         public void StartMovement(int perTime)
         {
-            Movement = new Timer(new TimerCallback(walkcallback), 0, 0, perTime);
+            Movement = new Timer(new TimerCallback(walkcallback), 0, 1000, perTime);
         }
         public void StopMovement()
         {
