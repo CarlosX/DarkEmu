@@ -1142,7 +1142,6 @@ namespace DarkEmu_GameServer
             }
             return null;
         }
-
         Timer Time;
         Timer Movement;
         Timer AggresiveTimer;
@@ -1196,9 +1195,8 @@ namespace DarkEmu_GameServer
         }
         public void StartRunTimer(int time)
         {
-            
             if (AutoRun != null) AutoRun.Dispose();
-            AutoRun = new Timer(new TimerCallback(AutoRunCallBack), 0, 0, time);
+            AutoRun = new Timer(new TimerCallback(AutoRunCallBack), 0, 0, time*5);
         }
         public void StopAutoRunTimer()
         {
@@ -1242,7 +1240,7 @@ namespace DarkEmu_GameServer
                 if (this.AutoMovement && !this.Die && this.LocalType == 1 && !this.Busy && !this.bSleep)
                 {
                     double reX = oX, reY = oY;
-                    Systems.aRound(ref reX, ref reY, 4);
+                    Systems.aRound(ref reX, ref reY, 0);
 
                     int angle = (randomtest.Next(1, 35) * 10);
                     reX = reX + 10 * Data.AngleCos[angle];
@@ -1266,6 +1264,7 @@ namespace DarkEmu_GameServer
                 Systems.Debugger.Write(ex);
             }
         }
+
         /*
         public void AutoRunCallBack(object e)
         {  
@@ -1508,7 +1507,7 @@ namespace DarkEmu_GameServer
         }
         public void StartMovement(int perTime)
         {
-            Movement = new Timer(new TimerCallback(walkcallback), 0, 0, perTime*4);
+            Movement = new Timer(new TimerCallback(walkcallback), 0, 0, perTime);
         }
         public void StopMovement()
         {
@@ -1558,31 +1557,6 @@ namespace DarkEmu_GameServer
         public void Dispose()
         {
             GC.Collect(GC.GetGeneration(this));
-        }
-
-        public float CovertDoubleFloat(double doubleVal)
-        {
-            float floatVal = 0;
-
-            // Double to float conversion can overflow.
-            try
-            {
-                floatVal = System.Convert.ToSingle(doubleVal);
-                /*System.Console.WriteLine("{0} as a float is {1}",
-                    doubleVal, floatVal);*/
-                return floatVal;
-            }
-            catch (System.OverflowException)
-            {
-                System.Console.WriteLine(
-                    "Overflow in double-to-float conversion.");
-                floatVal = 0;
-            }
-
-            // Conversion from float to double cannot overflow.
-            //doubleVal = System.Convert.ToDouble(floatVal);
-            
-            return floatVal;
         }
     }
     #endregion
