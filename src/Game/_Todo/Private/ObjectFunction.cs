@@ -72,6 +72,7 @@ namespace DarkEmu_GameServer
 
                 //Systems.aRound(ref Player.aRound, ref farkx, ref farky);
 
+
                 this.xSec = (byte)((farkx / 192) + 135);
                 this.ySec = (byte)((farky / 192) + 92);
 

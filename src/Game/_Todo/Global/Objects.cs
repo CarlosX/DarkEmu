@@ -1198,7 +1198,7 @@ namespace DarkEmu_GameServer
         {
             
             if (AutoRun != null) AutoRun.Dispose();
-            AutoRun = new Timer(new TimerCallback(AutoRunCallBack), 0, time, 0);
+            AutoRun = new Timer(new TimerCallback(AutoRunCallBack), 0, time, time);
         }
         public void StopAutoRunTimer()
         {
@@ -1242,7 +1242,12 @@ namespace DarkEmu_GameServer
                 if (this.AutoMovement && !this.Die && this.LocalType == 1 && !this.Busy && !this.bSleep)
                 {
                     double reX = oX, reY = oY;
-                    Systems.aRound(ref reX, ref reY, 1);
+                    Systems.aRound(ref reX, ref reY, 4);
+
+                    int angle = (randomtest.Next(1, 35) * 10);
+                    reX = reX + 10 * Data.AngleCos[angle];
+                    reY = reY + 10 * Data.AngleSin[angle];
+
                     this.x = reX;
                     this.y = reY;
                     this.aRound = new bool[8];
@@ -1503,7 +1508,7 @@ namespace DarkEmu_GameServer
         }
         public void StartMovement(int perTime)
         {
-            Movement = new Timer(new TimerCallback(walkcallback), 0, 1000, perTime);
+            Movement = new Timer(new TimerCallback(walkcallback), 0, 0, perTime);
         }
         public void StopMovement()
         {
