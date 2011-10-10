@@ -1198,7 +1198,7 @@ namespace DarkEmu_GameServer
         {
             
             if (AutoRun != null) AutoRun.Dispose();
-            AutoRun = new Timer(new TimerCallback(AutoRunCallBack), 0, time, time);
+            AutoRun = new Timer(new TimerCallback(AutoRunCallBack), 0, 0, time);
         }
         public void StopAutoRunTimer()
         {
@@ -1508,7 +1508,7 @@ namespace DarkEmu_GameServer
         }
         public void StartMovement(int perTime)
         {
-            Movement = new Timer(new TimerCallback(walkcallback), 0, 0, perTime);
+            Movement = new Timer(new TimerCallback(walkcallback), 0, 0, perTime*2);
         }
         public void StopMovement()
         {
@@ -1542,7 +1542,7 @@ namespace DarkEmu_GameServer
                         this.RecordedTime -= (this.WalkingTime * 0.1);
                     }
 
-                    if (SpawnWatch.ElapsedMilliseconds >= 9000)
+                    if (SpawnWatch.ElapsedMilliseconds >= 2000)
                     {
                         CheckEveryOne();
                         SpawnWatch.Restart();
