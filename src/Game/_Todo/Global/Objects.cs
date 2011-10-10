@@ -1508,7 +1508,7 @@ namespace DarkEmu_GameServer
         }
         public void StartMovement(int perTime)
         {
-            Movement = new Timer(new TimerCallback(walkcallback), 0, 0, perTime*2);
+            Movement = new Timer(new TimerCallback(walkcallback), 0, 0, perTime*4);
         }
         public void StopMovement()
         {

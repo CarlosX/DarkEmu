@@ -332,7 +332,7 @@ namespace DarkEmu_GameServer
                 // comando[0] = makeitem <- comando
                 // comando[1] = name     <- id_item
                 // comando[2] = plus     <- plus
-                switch (comando[0])
+                switch (comando[0].ToLower())
                 {
                     case "makeitem":
                         if (comando[1] != "")
@@ -345,7 +345,7 @@ namespace DarkEmu_GameServer
                             }
                         }
                         break;
-                    case "loadmoster":
+                    case "loadmonster":
                         if (comando[1] != "")
                         {
                             int id = objectdata.GetItem(comando[1]);

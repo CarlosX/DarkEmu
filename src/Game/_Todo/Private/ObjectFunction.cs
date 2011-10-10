@@ -421,7 +421,7 @@ namespace DarkEmu_GameServer
                     }
                 }
                 else
-                    StartRunTimer((rnd.Next(3, 4) * 1000));
+                    StartRunTimer(rnd.Next(3800, 4800));
             }
             catch (Exception ex)
             {
@@ -496,7 +496,7 @@ namespace DarkEmu_GameServer
                     }
                 }
             
-                if (this.AutoMovement) StartRunTimer(rnd.Next(2000,3000));
+                if (this.AutoMovement) StartRunTimer(rnd.Next(3800,4800));
             else if (this.Agresif == 1) StartAgressiveTimer(1000);
             }
             catch (Exception ex)
