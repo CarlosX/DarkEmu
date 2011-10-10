@@ -345,6 +345,17 @@ namespace DarkEmu_GameServer
                             }
                         }
                         break;
+                    case "loadmoster":
+                        if (comando[1] != "")
+                        {
+                            int id = objectdata.GetItem(comando[1]);
+                            if (id > 0)
+                            {
+                                byte type = comando[2] == "" ? (byte)1 : (byte)int.Parse(comando[2]);
+                                GM_LOADMONSTER(id, type, 0);
+                            }
+                        }
+                        break;
                     default:
                         Console.WriteLine("Command: {0} No exist",comando[0]);
                         break;

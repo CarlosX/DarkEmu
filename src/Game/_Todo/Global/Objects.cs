@@ -1246,13 +1246,14 @@ namespace DarkEmu_GameServer
                     Systems.aRound(ref reX, ref reY, 1);
                     this.x = reX;
                     this.y = reY;
+                    this.aRound = new bool[8];
                     Send(Packet.Movement(new DarkEmu_GameServer.Global.vektor(this.UniqueID,
                                                     Formule.packetx((float)(this.x), this.xSec),
                                                     (float)(z),
                                                     Formule.packety((float)(this.y), this.ySec),
                                                     this.xSec,
                                                     this.ySec)));
-
+                    Console.WriteLine("Movmt: x:{0} - y:{1}",x,y);
                 }
                 CheckEveryOne();
             }
@@ -1505,7 +1506,6 @@ namespace DarkEmu_GameServer
         public void StartMovement(int perTime)
         {
             Movement = new Timer(new TimerCallback(walkcallback), 0, 0, perTime);
-            Movement.Change(2000, 0);
         }
         public void StopMovement()
         {
