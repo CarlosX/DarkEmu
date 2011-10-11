@@ -212,7 +212,7 @@ namespace DarkEmu_GameServer
             o.AutoMovement = true;
             o.LocalType = Data.ObjectBase[id].Type;
             o.OrgMovement = o.AutoMovement;
-            o.StartRunTimer(Global.RandomID.GetRandom(3000, 8000));
+            o.StartRunTimer(Global.RandomID.GetRandom(5000, 8000));
             o.ID = id;
             o.Ids = new Global.ID(Global.ID.IDS.Object);
             o.UniqueID = o.Ids.GetUniqueID;
@@ -243,7 +243,7 @@ namespace DarkEmu_GameServer
             if (id == 1979 || id == 2101 || id == 2124 || id == 2111 || id == 2112) o.AutoMovement = false;
             o.OrgMovement = o.AutoMovement;
 
-            if (o.AutoMovement) o.StartRunTimer(Global.RandomID.GetRandom(3000, 8000));
+            if (o.AutoMovement) o.StartRunTimer(Global.RandomID.GetRandom(5000, 8000));
             o.Type = Systems.RandomType(Data.ObjectBase[id].Level, ref o.Kat, false, ref o.Agresif);
             o.HP *= o.Kat;
             if (o.Type == 1)

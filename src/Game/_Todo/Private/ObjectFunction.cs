@@ -163,7 +163,7 @@ namespace DarkEmu_GameServer
                 //start auto walking
                 if (this.AutoMovement)
                 {
-                    this.StartRunTimer((rnd.Next(4, 8) * 4000));
+                    this.StartRunTimer((rnd.Next(5, 8) * 1000));
                 }
                 else if (this.Agresif == 1) this.StartAgressiveTimer(1000);
             }
@@ -424,7 +424,7 @@ namespace DarkEmu_GameServer
                     }
                 }
                 else
-                    StartRunTimer(rnd.Next(4800, 8800));
+                    StartRunTimer(rnd.Next(5000, 8000));
             }
             catch (Exception ex)
             {
@@ -498,8 +498,8 @@ namespace DarkEmu_GameServer
                         }
                     }
                 }
-            
-                if (this.AutoMovement) StartRunTimer(rnd.Next(3800,4800));
+
+                if (this.AutoMovement) StartRunTimer(rnd.Next(5000, 8000));
             else if (this.Agresif == 1) StartAgressiveTimer(1000);
             }
             catch (Exception ex)

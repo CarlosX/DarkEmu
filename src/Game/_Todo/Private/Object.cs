@@ -268,42 +268,42 @@ namespace DarkEmu_GameServer
                 switch (grnd.Next(0, 10))
                 {
                     case 0:
-                        x -= 1.5f * oran;
-                        y -= 1.8f * oran;
+                        x -= 0.5f * oran;
+                        y -= 0.8f * oran;
                         break;
                     case 1:
-                        y -= 3 * oran;
+                        y -= 0.3 * oran;
                         break;
                     case 2:
-                        x += 1.8f * oran;
-                        y -= 1.5f * oran;
+                        x += 0.8f * oran;
+                        y -= 0.5f * oran;
                         break;
                     case 3:
-                        x += 3 * oran;
+                        x += 0.3 * oran;
                         break;
                     case 4:
-                        x -= 3 * oran;
+                        x -= 0.3 * oran;
                         break;
                     case 5:
-                        x -= 1.2f * oran;
-                        y += 1.8f * oran;
+                        x -= 0.2f * oran;
+                        y += 0.8f * oran;
                         break;
                     case 6:
-                        y += 3 * oran;
+                        y += 0.3 * oran;
                         break;
                     case 7:
-                        x += 1.5f * oran;
-                        y += 1.5f * oran;
+                        x += 0.5f * oran;
+                        y += 0.5f * oran;
                         break;
                     case 8:
-                        x += 2f * oran;
-                        y += 1.5f * oran;
+                        x += 0.2f * oran;
+                        y += 0.5f * oran;
                         break;
                     case 9:
-                        x -= 2 * oran;
+                        x -= 0.2 * oran;
                         break;
                     case 10:
-                        y -= 2 * oran;
+                        y -= 0.2 * oran;
                         break;
                 }
             }
