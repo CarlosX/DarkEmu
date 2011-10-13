@@ -63,7 +63,7 @@ namespace DarkEmu_GameServer
         }
         public static double gamedistance(float x1, float y1, float x2, float y2)
         {
-            return Math.Sqrt(((x1 - x2) * (x1 - x2)) + ((y1 - y2) * (y1 - y2)));// + ((z1 - z2) * (z1 - z2))
+            return Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));//Math.Sqrt(((x1 - x2) * (x1 - x2)) + ((y1 - y2) * (y1 - y2)));// + ((z1 - z2) * (z1 - z2))
         }
         public static double gamedamage(double maxDMG, double aPower, double absrob, double def, double pBalance, double uAttack)
         {

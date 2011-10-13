@@ -488,6 +488,14 @@ namespace DarkEmu_GameServer.Global
             this.ySec = ySec;
             this.ID = ID;
         }
+        public double distanc(vektor v1, vektor v2)
+        {
+            double distanc;
+
+            distanc = Math.Sqrt(Math.Pow((v2.x - v1.x), 2) + Math.Pow((v2.y - v1.y), 2));
+
+            return distanc;
+        }
     }
     public sealed class slotItem
     {
