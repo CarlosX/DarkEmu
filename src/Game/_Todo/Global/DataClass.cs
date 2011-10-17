@@ -247,7 +247,7 @@ namespace DarkEmu_GameServer.Global
                     #endregion  
                     break;
                 case "alchemymaterial"://Etc drops would contains (Potions, Arrows, Material etc).
-                case "event":
+                //case "event":
                     #region Alchemy materials
                     string truncatedMobName = Data.ObjectBase[mobID].Name.Substring(Data.ObjectBase[mobID].Name.IndexOf("_")+1); 
                     filter = ID.FindAll(item => Data.ItemBase[item].Name.Contains(truncatedMobName) );
